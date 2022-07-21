@@ -1,50 +1,36 @@
 @font-face {
-  font-family: "SourceHanSansCN";
+  font-family: "Alibaba";
   font-weight: 700;
   /* Project id 2621899 */
-  src: url('../fonts/SourceHanSansCN-Bold.otf') format('truetype');
+  src: url('../fonts/Alibaba-PuHuiTi-Bold.otf') format('truetype');
 }
 
 @font-face {
-  font-family: "DIN";
-  font-weight: 600;
+  font-family: "Alibaba";
+  font-weight: 900;
   /* Project id 2621899 */
-  src: url('../fonts/DIN-Medium.otf') format('truetype');
+  src: url('../fonts/Alibaba-PuHuiTi-Heavy.otf') format('truetype');
 }
 
 @font-face {
-  font-family: "DIN";
-  /* Project id 2621899 */
-  font-weight: 100;
-  src: url('../fonts/DIN-Light.otf') format('truetype');
-}
-
-@font-face {
-  font-family: "SourceHanSansCN";
-  font-weight: 600;
-  /* Project id 2621899 */
-  src: url('../fonts/SourceHanSansCN-Medium.otf') format('truetype');
-}
-
-@font-face {
-  font-family: "SourceHanSansCN";
+  font-family: "Alibaba";
   font-weight: 500;
   /* Project id 2621899 */
-  src: url('../fonts/SourceHanSansCN-Regular.otf') format('truetype');
+  src: url('../fonts/Alibaba-PuHuiTi-Regular.otf') format('truetype');
 }
 
 @font-face {
-  font-family: "SourceHanSansCN";
-  font-weight: 400;
+  font-family: "Alibaba";
+  font-weight: 600;
   /* Project id 2621899 */
-  src: url('../fonts/SourceHanSansCN-Normal.otf') format('truetype');
+  src: url('../fonts/Alibaba-PuHuiTi-Medium.otf') format('truetype');
 }
 
 @font-face {
-  font-family: "SourceHanSansCN";
+  font-family: "Alibaba";
   font-weight: 100;
   /* Project id 2621899 */
-  src: url('../fonts/SourceHanSansCN-Light.otf') format('truetype');
+  src: url('../fonts/Alibaba-PuHuiTi-Light.otf') format('truetype');
 }
 
 input,
@@ -84,8 +70,7 @@ ul {
 body {
   min-height: 1000px;
   background-color: #fff;
-  font-family: "SourceHanSansCN", "Microsoft YaHei", Helvetica, Arial, "Helvetica Neue", sans-serif;
-  width: 2560px;
+  font-family: "Alibaba", "Microsoft YaHei", Helvetica, Arial, "Helvetica Neue", sans-serif;
 }
 
 * {
@@ -113,7 +98,7 @@ body {
   top: 0;
   left: 0;
   background-color: rgba($color: #fff, $alpha: .5);
-  width: 2560px;
+  width: 100%;
   z-index: 99;
   border-bottom: 1px solid #ffffff;
 
@@ -161,7 +146,7 @@ body {
         line-height: 47px;
         font-size: 18px;
         color: #000000;
-        font-family: "SourceHanSansCN";
+        font-family: "Alibaba";
         font-weight: Normal;
         display: inline-block;
         position: relative;
@@ -213,8 +198,9 @@ body {
     position: relative;
 
     .swiper-slide {
+      position: relative;
 
-      img {
+      >.imgFull {
         height: 100%;
         display: inline-block;
       }
@@ -227,6 +213,7 @@ body {
       z-index: 11;
       outline: none;
       cursor: pointer;
+
       img {
         height: 46px;
       }
@@ -250,7 +237,8 @@ body {
         display: inline-block;
         cursor: pointer;
         position: relative;
-        .num{
+
+        .num {
           position: absolute;
           top: -30px;
           color: #fff;
@@ -264,53 +252,114 @@ body {
         background-color: #fff;
         margin-bottom: -2px;
         height: 4px;
-        .num{
+
+        .num {
           top: -29px;
         }
       }
     }
 
-    .banner_info {
+    .banner_more {
       position: absolute;
-      height: 100%;
-      padding-top: 10.9375vw;
+      left: 15.3516vw;
+      bottom: 16.7969vw;
+      z-index: 999;
+      width: 178px;
+      height: 46px;
+      border: 1px solid #fff;
+      border-radius: 23px;
+      line-height: 44px;
+      overflow: hidden;
 
-      .title1 {
-        font-size: 1.458vw;
-        margin-bottom: .364vw;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        right: -380px;
+        top: -120px;
+        background-color: rgba($color: #fff, $alpha: .3);
+        transform: rotate(48deg);
+        transition: all .5s;
+        z-index: -1;
       }
 
-      .title2 {
-        font-size: 2.18vw;
-        font-family: "SourceHanSansCN Bold";
-        line-height: 2.81vw;
-        margin-bottom: .52vw;
-      }
+      a {
+        padding-left: 38px;
+        position: relative;
+        font-family: "Alibaba";
+        font-weight: 500;
+        font-size: 18px;
+        color: #fff;
+        display: block;
 
-      .title3 {
-        font-size: .99vw;
-        font-family: "SourceHanSansCN Bold Normal";
-        margin-bottom: 2.29vw;
-        display: flex;
-        align-items: center;
-
-        span {
-          font-size: .78vw;
+        .icon_more {
+          position: absolute;
+          right: 15px;
+          top: 50%;
+          margin-top: -13px;
         }
       }
 
-      .more {
-        width: 9.58vw;
-        height: 2.5vw;
-        background-color: #019ed5;
-        border-radius: .83vw;
-        text-align: center;
-
-        a {
-          color: white;
-          line-height: 2.5vw;
+      &:hover {
+        &::after {
+          right: -240px;
         }
       }
+    }
+  }
+}
+
+.i_common_title {
+  text-align: center;
+  padding-top: 120px;
+
+  .title_cn {
+    font-size: 48px;
+    color: #333333;
+    font-weight: bold;
+    line-height: 1em;
+  }
+
+  .title_en {
+    font-size: 30px;
+    color: #666666;
+    margin-bottom: 20px;
+  }
+}
+
+.i_solution {
+  height: 1120px;
+  width: 100%;
+  background: url(../images/bg/1.png);
+
+  .i_solution_intro {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .i_solution_title {
+    .title_cn {
+      display: flex;
+      font-size: 40px;
+      color: #333333;
+      line-height: 1.2em;
+      &::after{
+        content: "";
+        width: 100px;
+        margin-left: 15px;
+        margin-right: 80px;
+        flex: 1;
+        height: 1px;
+        background-color: #bfbfbf;
+        align-self: center;
+      }
+    }
+
+    .title_en {
+      font-size: 28px;
+      color: #666666;
     }
   }
 }
