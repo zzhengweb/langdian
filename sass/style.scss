@@ -1,4 +1,31 @@
 @font-face {
+  font-family: "DIN";
+  font-weight: bold;
+  /* Project id 2621899 */
+  src: url('../fonts/DIN-Bold.otf.otf') format('truetype');
+}
+
+@font-face {
+  font-family: "SourceHanSansCN";
+  font-weight: normal;
+  /* Project id 2621899 */
+  src: url('../fonts/SourceHanSansCN.otf') format('truetype');
+}
+@font-face {
+  font-family: "SourceHanSansCN";
+  font-weight: 500;
+  /* Project id 2621899 */
+  src: url('../fonts/SourceHanSansCN-Regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: "SourceHanSansCN";
+  font-weight: normal;
+  /* Project id 2621899 */
+  src: url('../fonts/SourceHanSansCN-Normal.otf') format('truetype');
+}
+
+@font-face {
   font-family: "Alibaba";
   font-weight: 700;
   /* Project id 2621899 */
@@ -56,7 +83,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #019ED5;
+  color: #a00c0f;
   text-decoration: none;
 }
 
@@ -72,6 +99,7 @@ p {
 
 
 body {
+  width: 2560px;
   min-height: 1000px;
   background-color: #fff;
   font-family: "Alibaba", "Microsoft YaHei", Helvetica, Arial, "Helvetica Neue", sans-serif;
@@ -766,7 +794,7 @@ body {
           margin-bottom: 25px;
         }
 
-        .detail {
+        .details {
           font-size: 15px;
           color: #666666;
           line-height: 28px;
@@ -905,9 +933,11 @@ body {
 
   .i_partner {
     display: flex;
+
     .partner_left {
       flex: 1;
       width: 10px;
+
       .title1 {
         font-size: 51px;
         font-weight: lighter;
@@ -939,7 +969,8 @@ body {
 
       .change_btn {
         display: flex;
-        .btn_pre{
+
+        .btn_pre {
           margin-right: 30px;
         }
       }
@@ -947,7 +978,8 @@ body {
 
     .partner_right {
       width: 1190px;
-      li{
+
+      li {
         margin-right: 4px;
         height: 170px;
         background-color: #ffffff;
@@ -957,27 +989,341 @@ body {
         justify-content: center;
         transition: all .5s;
         cursor: pointer;
-        &:last-child{
+
+        &:last-child {
           margin-right: 0;
         }
-        &:hover{
-          box-shadow:  0 0 30px rgba($color: #8b8b8b, $alpha: .4);
+
+        &:hover {
+          box-shadow: 0 0 30px rgba($color: #8b8b8b, $alpha: .4);
           position: relative;
           z-index: 9;
         }
       }
-      .partner_list1{
+
+      .partner_list1 {
         display: flex;
-        li{
+
+        li {
           width: calc((100% - 28px) / 8);
         }
       }
-      .partner_list2{
+
+      .partner_list2 {
         display: flex;
-        li{
+
+        li {
           width: calc((100% - 24px) / 7);
         }
       }
     }
+  }
+}
+
+.i_contact {
+  margin-bottom: 88px;
+
+  .contact_header {
+    width: 2560px;
+    height: 468px;
+
+    >img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .header_content {
+      text-align: center;
+      margin-top: -370px;
+
+      .line {
+        width: 164px;
+        height: 1px;
+        background-color: #b72023;
+        display: inline-block;
+        margin-bottom: 5px;
+      }
+
+      .title {
+        font-size: 45px;
+        font-weight: 500;
+        color: white;
+        margin-bottom: 10px;
+
+        span {
+          font-weight: lighter;
+        }
+      }
+
+      .details {
+        font-size: 20px;
+        color: white;
+      }
+
+    }
+  }
+
+  .i_contact_details {
+    height: 540px;
+    display: flex;
+    margin-top: -212px;
+
+    .details_left {
+      height: 540px;
+      width: 926px;
+      position: relative;
+
+      >img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .details_pre {
+        position: absolute;
+        bottom: 20px;
+        right: 119px;
+        cursor: pointer;
+      }
+
+      .details_next {
+        position: absolute;
+        bottom: 20px;
+        right: 29px;
+        cursor: pointer;
+      }
+    }
+
+    .details_right {
+      width: 100px;
+      flex: 1;
+      height: 540px;
+      background-color: #ecedee;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .details_info {
+      padding-top: 70px;
+      padding-left: 60px;
+      height: 100px;
+      flex: 1;
+
+      li {
+        display: flex;
+        margin-bottom: 40px;
+
+        .item_icon {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          line-height: 60px;
+          text-align: center;
+          background-color: #dcdcdc;
+          margin-right: 20px;
+        }
+
+        .item_intro {
+          width: 10px;
+          flex: 1;
+
+          .item_title {
+            font-size: 19px;
+            color: #999999;
+            font-weight: normal;
+            font-family: "SourceHanSansCN";
+          }
+
+          .item_text {
+            font-size: 19px;
+            color: #666666;
+            font-weight: normal;
+            font-family: "SourceHanSansCN";
+          }
+        }
+      }
+    }
+
+    .details_btn {
+      background-color: #d2d2d2;
+      height: 142px;
+      display: flex;
+      align-items: center;
+
+      li {
+        width: 204px;
+        height: 63px;
+        background-color: #b82023;
+        border-radius: 4px;
+        margin-left: 85px;
+        text-align: center;
+        line-height: 62px;
+
+        >img {}
+
+        a {
+          display: block;
+          font-size: 20px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background: url(../images/footer/bg.jpg) no-repeat center bottom;
+  background-size: cover;
+
+  .header_border {
+    height: 108px;
+    border-bottom: 1px solid #bfbfbf;
+    margin-bottom: 48px;
+  }
+
+  .footer_header {
+    width: 1660px;
+    margin-left: -60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 108px;
+
+    .header_logo {}
+
+    .header_ph {
+      font-size: 27px;
+      line-height: 1em;
+      font-family: "DIN";
+      font-weight: bold;
+      color: #b82124;
+      display: flex;
+      align-items: center;
+
+      >img {
+        margin-right: 7px;
+      }
+    }
+  }
+
+  .footer_body {
+    display: flex;
+    width: 1660px;
+    margin-left: -60px;
+    padding-bottom: 60px;
+
+    .footer_navlist {
+      width: 10px;
+      flex: 1;
+      display: flex;
+
+      >li {
+        width: calc(100% / 6);
+        height: 288px;
+        padding-left: 20px;
+        background: url(../images/footer/line.jpg) no-repeat top right;
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        &:last-child {
+          background: none;
+        }
+
+        .item_title {
+          font-size: 20px;
+          font-family: "SourceHanSansCN";
+          font-weight: normal;
+          color: #333333;
+          position: relative;
+          line-height: 36px;
+          margin-bottom: 10px;
+
+          &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            max-width: 52px;
+            height: 1px;
+            left: 0;
+            bottom: 0;
+            background-color: #434343;
+          }
+        }
+
+        .item_list {
+          li {
+            a {
+              font-size: 16px;
+              color: #666666;
+              line-height: 30px;
+            }
+          }
+        }
+      }
+    }
+
+    .footer_ewm {
+      padding-top: 80px;
+      width: 160px;
+      margin-left: 130px;
+
+      .ewm_img {
+        width: 100%;
+
+        >img {
+          width: 100%;
+        }
+      }
+
+      .ewm_text {
+        text-align: center;
+        font-size: 15px;
+        font-family: "SourceHanSansCN";
+        font-weight: normal;
+        line-height: 2em;
+      }
+    }
+  }
+
+  .footer_info {
+    line-height: 46px;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #666666;
+
+    span {
+      font-size: 15px;
+      font-family: "SourceHanSansCN";
+      font-weight: normal;
+      margin-right: 40px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.inner_banner {
+  background-size: cover;
+  background-position: center top;
+  height: 578px;
+  overflow: hidden;
+
+  .title_b {
+    font-family: "Alibaba";
+    font-weight: bold;
+    font-size: 52px;
+    color: white;
+    margin-top: 250px;
+    margin-bottom: 20px;
+  }
+
+  .title_s {
+    color: white;
+    font-family: "SourceHanSansCN";
+    font-weight: 500;
+    font-size: 28px;
   }
 }
