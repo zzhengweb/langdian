@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>郎电智能</title>
+  <meta name="DESCRIPTION" content="">
+  <meta name="KEYWORDS" content="">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/response.css">
+  <link rel="stylesheet" href="iconfont/iconfont.css">
+  <link href="https://cdn.bootcdn.net/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <!--引用百度地图API-->
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=DOY76srUcSCyvMGWxbtIYp246TCG5n8D"></script>
+  <script type="text/javascript"
+    src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+  <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <nav class="header_bg close_nav" id="change_nav">
+    <div class="container_zz">
+      <div class="header_nav">
+        <div class="change_btn visible_xs" id="change_btn">
+          <img src="./images/open.jpg" class="open_btn" />
+          <img src="./images/close.jpg" class="close_btn" />
+        </div>
+        <div class="header_logo">
+          <a href="index.html"><img src="./images/logo.png" class="imgFull" /></a>
+        </div>
+        <ul class="header_list">
+          <li class="active"><a href="index.html">首页</a></li>
+          <li><a href="intro.html">关于朗电</a></li>
+          <li><a href="pro.html">新闻动态</a></li>
+          <li><a href="application.html">朗电机器人</a></li>
+          <li><a href="news.html">问信材料</a></li>
+          <li><a href="partners.html">谷乡智能</a></li>
+          <li><a href="contact.html">奥斯坦丁软件</a></li>
+          <li><a href="contact.html">联系方式</a></li>
+        </ul>
+        <div class="header_right">
+          <a href="#">EN</a> | <a href="#"><img src="./images/icon/1.png" /></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- 海报 -->
+  <div class="inner_banner" style="background-image: url(./images/news/banner.jpg);">
+    <div class="container_zz">
+      <div class="title_b">新闻动态</div>
+      <div class="title_s">苏州市朗电机器人有限公司是一家整体智能方案商</div>
+    </div>
+  </div>
+  <div class="contact_wrapper">
+    <div class="inner_common_title">
+      <div class="title_cn">联系我们</div>
+      <div class="title_en">Contact us</div>
+    </div>
+    <div>
+      <div class="map" id="map_box"></div>
+    </div>
+    <div class="contact_box">
+      <div class="box_left">
+        <img src="./images/contact/ewm.jpg" />
+        <div class="ewm_info">扫描二维码关注我们</div>
+      </div>
+      <ul class="box_right">
+        <li>
+          <div class="item_icon">
+            <img src="./images/contact/1.jpg" />
+          </div>
+          <div class="item_info">
+            <div class="item_name">座机</div>
+            <div class="item_det">0512-63495989</div>
+          </div>
+        </li>
+        <li>
+          <div class="item_icon">
+            <img src="./images/contact/1.jpg" />
+          </div>
+          <div class="item_info">
+            <div class="item_name">邮箱</div>
+            <div class="item_det">service@langdianrobot.com </div>
+          </div>
+        </li>
+        <li>
+          <div class="item_icon">
+            <img src="./images/contact/1.jpg" />
+          </div>
+          <div class="item_info">
+            <div class="item_name">手机</div>
+            <div class="item_det">13862515288</div>
+          </div>
+        </li>
+        <li>
+          <div class="item_icon">
+            <img src="./images/contact/1.jpg" />
+          </div>
+          <div class="item_info">
+            <div class="item_name">地址</div>
+            <div class="item_det">苏州市吴江区平望唐家湖大道788号</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="header_border">
+      <div class="container_zz">
+        <div class="footer_header">
+          <div class="header_logo">
+            <img src="./images/footer/logo.png" />
+          </div>
+          <div class="header_ph">
+            <img src="./images/footer/ph.png" />
+            <span>0512-63495989</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container_zz">
+      <div class="footer_body">
+        <ul class="footer_navlist">
+          <li>
+            <div class="item_title">朗电机器人</div>
+            <ul class="item_list">
+              <li><a href="#">3C（手机、液晶显示屏）</a></li>
+              <li><a href="#">新能源（电池）</a></li>
+              <li><a href="#">半导体</a></li>
+              <li><a href="#">汽车</a></li>
+              <li><a href="#">MES</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="item_title">问信</div>
+            <ul class="item_list">
+              <li><a href="#">手机保护膜</a></li>
+              <li><a href="#">模切冲压件</a></li>
+              <li><a href="#">柔性面板</a></li>
+              <li><a href="#">标签</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="item_title">谷乡</div>
+            <ul class="item_list">
+              <li><a href="#">PCBA</a></li>
+              <li><a href="#">真空泵</a></li>
+              <li><a href="#">电子产品组装</a></li>
+              <li><a href="#">OEM & ODM</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="item_title">奥斯坦丁</div>
+            <ul class="item_list">
+              <li><a href="#">OTD.MES.Suite</a></li>
+              <li><a href="#">OTD.BI.Purtal</a></li>
+              <li><a href="#">OTD.SmartioT</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="item_title"> 新闻</div>
+            <ul class="item_list">
+              <li><a href="#">行业新闻</a></li>
+              <li><a href="#">最新新闻</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="item_title">联系我们</div>
+            <ul class="item_list">
+              <li><a href="#">联系方式</a></li>
+              <li><a href="#">加入我们</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="footer_ewm">
+          <div class="ewm_img">
+            <img src="./images/footer/ewm.png" />
+          </div>
+          <div class="ewm_text">扫一扫，了解我们</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_info">
+      <span>Copyright 2017-2018 苏州市朗电机器人有限公司 All Rights Reserved.</span>
+      <span><a href="#">苏ICP备17024405号</a></span>
+      <span><a href="#">亿韵商务</a> 吴江网站建设</span>
+    </div>
+  </footer>
+  <script src="js/jquery.2.2.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/flexible.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="js/nav.js"></script>
+  <script>
+    //创建和初始化地图函数：
+    function initMap() {
+      createMap(); //创建地图
+      // setMapEvent(); //设置地图事件
+      addMapOverlay(); //向地图添加覆盖物
+      // if(document.body.clientWidth>768){
+      //     addMapControl(); //向地图添加控件
+      // }
+    }
+
+    function createMap() {
+      map = new BMap.Map("map_box");
+      poi = new BMap.Point(120.643897, 31.034704);
+      map.centerAndZoom(poi, 24);
+      var loadCount = 1;
+      map.addEventListener("tilesloaded", function () {
+        if (loadCount == 1) {
+          map.setCenter(poi);
+        }
+        loadCount = loadCount + 1;
+      });
+    }
+
+    function setMapEvent() {
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+
+    function addClickHandler(target, window) {
+      target.addEventListener("click", function () {
+        target.openInfoWindow(window);
+      });
+    }
+
+    function addMapOverlay() {
+      // 百度地图API功能
+      var content = `
+            <div class="pop_map">
+              <div class="pop_content">
+                <div class="pop_title">苏州朗电机器人有限公司</div>
+                <div class="pop_addr">地址：苏州市吴江区平望唐家湖大道788号</div>
+              </div>
+        `;
+
+      //创建检索信息窗口对象
+      var searchInfoWindow = null;
+      searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+        title: "苏州朗电机器人有限公司", //标题
+        width: 374, //宽度
+        height: 130, //高度
+        panel: "panel", //检索结果面板
+        enableAutoPan: true, //自动平移
+        enableSendToPhone: false,
+        searchTypes: []
+      });
+      let isOpen = false;
+      var marker = new BMap.Marker(poi); //创建marker对象
+      // marker.addEventListener("click", function (e) {
+      //   e.domEvent.preventDefault();
+      //   e.domEvent.stopPropagation();
+      //   isOpen ? searchInfoWindow.close(marker) : searchInfoWindow.open(marker);
+      //   isOpen = !isOpen;
+      // })
+      // map.addEventListener("click", function (e) {
+      //   isOpen && searchInfoWindow.close(marker);
+      //   isOpen = false;
+      // })
+      searchInfoWindow.open(marker)
+      // map.addOverlay(marker); //在地图中添加marker
+    }
+    //向地图添加控件
+    // function addMapControl() {
+    //   var scaleControl = new BMap.ScaleControl({
+    //     anchor: BMAP_ANCHOR_BOTTOM_LEFT
+    //   });
+    //   scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+    //   map.addControl(scaleControl);
+    //   var navControl = new BMap.NavigationControl({
+    //     anchor: BMAP_ANCHOR_TOP_LEFT,
+    //     type: BMAP_NAVIGATION_CONTROL_LARGE
+    //   });
+    //   map.addControl(navControl);
+    //   var overviewControl = new BMap.OverviewMapControl({
+    //     anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+    //     isOpen: true
+    //   });
+    //   map.addControl(overviewControl);
+    // }
+    var map, poi;
+    initMap();
+  </script>
+</body>
+
+</html>

@@ -2,7 +2,14 @@
   font-family: "DIN";
   font-weight: bold;
   /* Project id 2621899 */
-  src: url('../fonts/DIN-Bold.otf.otf') format('truetype');
+  src: url('../fonts/DIN-Bold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: "DIN";
+  font-weight: lighter;
+  /* Project id 2621899 */
+  src: url('../fonts/DIN-Light') format('truetype');
 }
 
 @font-face {
@@ -11,6 +18,7 @@
   /* Project id 2621899 */
   src: url('../fonts/SourceHanSansCN.otf') format('truetype');
 }
+
 @font-face {
   font-family: "SourceHanSansCN";
   font-weight: 500;
@@ -178,7 +186,6 @@ body {
         line-height: 47px;
         font-size: 18px;
         color: #000000;
-        font-family: "Alibaba";
         font-weight: Normal;
         display: inline-block;
         position: relative;
@@ -319,7 +326,6 @@ body {
       a {
         padding-left: 38px;
         position: relative;
-        font-family: "Alibaba";
         font-weight: 500;
         font-size: 18px;
         color: #fff;
@@ -1312,7 +1318,6 @@ body {
   overflow: hidden;
 
   .title_b {
-    font-family: "Alibaba";
     font-weight: bold;
     font-size: 52px;
     color: white;
@@ -1325,5 +1330,384 @@ body {
     font-family: "SourceHanSansCN";
     font-weight: 500;
     font-size: 28px;
+  }
+}
+
+.news_change {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  border-bottom: 1px solid #dcdcdc;
+
+  li {
+    padding: 0 7px;
+    line-height: 84px;
+    margin: 0 16px;
+
+    a {
+      font-size: 20px;
+    }
+
+    &.active {
+      border-bottom: 3px solid #a00c0f;
+
+      a {
+        color: #a00c0f;
+      }
+    }
+  }
+}
+
+.news_show {
+  display: flex;
+  padding-top: 58px;
+  margin-bottom: 72px;
+
+  .show_left {
+    width: 631px;
+    height: 566px;
+  }
+
+  .show_right {
+    width: 10px;
+    flex: 1;
+    padding-left: 48px;
+    padding-right: 18px;
+
+    li {
+      display: flex;
+      margin-bottom: 19px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .item_date {
+        width: 121px;
+        height: 127px;
+        background-color: #b72023;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .item_days {
+          font-size: 30px;
+          font-family: "DIN";
+          font-weight: lighter;
+          color: white;
+        }
+
+        .item_year {
+          font-size: 20px;
+          font-family: "DIN";
+          font-weight: lighter;
+          color: white;
+        }
+      }
+
+      .item_content {
+        background-color: #f2f2f2;
+        padding-top: 28px;
+        padding-left: 35px;
+        padding-right: 50px;
+
+        .item_title {
+          font-size: 18px;
+          color: #333333;
+          margin-bottom: 8px;
+        }
+
+        .item_detail,
+        p {
+          font-size: 14px;
+          color: #666666;
+          line-height: 22px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+.news_list {
+  border-top: 1px solid #dcdcdc;
+
+  .news_item {
+    border-bottom: 1px solid #dcdcdc;
+    display: flex;
+    padding: 45px 0 50px 0;
+
+    .item_date {
+      width: 238px;
+
+      .item_days {
+        font-size: 54.93px;
+        color: #999999;
+        font-family: "DIN";
+        font-weight: bold;
+      }
+
+      .item_right {
+        .item_year {
+          font-weight: normal;
+          font-size: 18px;
+          color: #999999;
+        }
+
+        >img {}
+      }
+    }
+
+    .item_img {
+      width: 273px;
+      height: 166px;
+
+      >img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .item_detail {
+      padding-left: 34px;
+      padding-top: 10px;
+
+      .item_title {
+        font-size: 18px;
+        color: #333333;
+        font-family: "SourceHanSansCN";
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+
+      .item_content,
+      .item_content p {
+        font-size: 14px;
+        color: #666666;
+        line-height: 28px;
+
+      }
+
+      .item_content {
+        margin-bottom: 40px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+      }
+
+      .more {}
+    }
+  }
+}
+
+.pagination_list {
+  display: flex;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 102px;
+
+  li {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #dcdcdc;
+    line-height: 48px;
+    text-align: center;
+    margin: 0 13px;
+
+    a {
+      font-size: 16px;
+      color: #999999;
+      font-family: "SourceHanSansCN";
+      display: block;
+    }
+
+    &.active {
+      background-color: #a00c0f;
+
+      a {
+        color: #ffffff;
+      }
+    }
+
+    &.change_btn {
+      img {
+        margin-top: -3px;
+      }
+    }
+  }
+}
+
+.contact_wrapper {
+  padding-top: 80px;
+
+  .inner_common_title {
+    text-align: center;
+    margin-bottom: 52px;
+
+    .title_cn {
+      font-size: 40px;
+      color: #333333;
+    }
+
+    .title_en {
+      font-size: 22px;
+      color: #999999;
+    }
+
+    &::after {
+      content: "";
+      width: 92px;
+      height: 1px;
+      background-color: #a00c0f;
+      display: inline-block;
+    }
+  }
+
+  .map {
+    height: 694px;
+    width: 100%;
+
+    .BMapLib_bubble_top,
+    .BMapLib_trans,
+    .anchorBL {
+      display: none;
+    }
+
+    .BMapLib_SearchInfoWindow {
+      border: none;
+      background-color: transparent;
+      bottom: -340px !important;
+    }
+
+    .BMapLib_bubble_center {
+      .BMapLib_bubble_content {
+        padding: 0;
+
+        .pop_map {
+          width: 374px;
+          height: 114px;
+          background: #bb2b2f;
+          display: flex;
+          padding-top: 15px;
+          position: relative;
+
+          .pop_content {
+            width: 100%;
+            padding: 0 30px;
+
+            .pop_title {
+              width: 100%;
+              font-size: 24px;
+              color: #ffffff;
+              margin-bottom: 12px;
+              font-family: "SourceHanSansCN";
+              font-weight: bold;
+              border-bottom: 1px solid #ffffff;
+              padding-bottom: 10px;
+            }
+
+            .pop_addr {
+              width: 100%;
+              font-size: 16px;
+              color: #ffffff;
+              line-height: 16px;
+              font-family: "SourceHanSansCN Normal";
+            }
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            height: 0;
+            border-style: solid;
+            border-width: 12px 10px;
+            border-color: #bb2b2f transparent transparent transparent;
+            bottom: -24px;
+            left: calc(50% - 10px);
+          }
+        }
+      }
+    }
+  }
+
+  .contact_box {
+    padding:70px 56px;
+    display: flex;
+    width: 1530px;
+    margin:-116px auto 256px auto;
+    box-shadow: 0 10px 20px rgba($color: #e9e9e9, $alpha: .8);
+    position: relative;
+    z-index: 99;
+    background-color: #ffffff;
+    .box_left {
+      padding: 22px 42px 15px 42px;
+      width: 286px;
+      border:1px solid #dcdcdc;
+      >img{
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .ewm_info{
+        font-size: 20px;
+        font-family: "SourceHanSansCN";
+        font-weight: normal;
+        text-align: center;
+      }
+    }
+
+    .box_right {
+      width: 10px;
+      flex: 1;
+      padding-top: 36px;
+      padding-left: 76px;
+      padding-right: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: flex-start;
+      li {
+        width: 430px;
+        display: flex;
+        .item_icon {
+          width: 78px;
+          height: 78px;
+          border-radius: 50%;
+          border:1px solid #b82024;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 20px;
+        }
+
+        .item_info {
+          width: 10px;
+          flex: 1;
+          .item_name {
+            font-size: 22px;
+            font-weight: bold;
+            color: #333333;
+            font-family: "SourceHanSansCN";
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 3px;
+          }
+
+          .item_det {
+            font-size: 20px;
+            color: #999999;
+            font-weight: normal;
+            font-family: "SourceHanSansCN";
+            padding-top: 7px;
+          }
+        }
+        &:nth-child(1),&:nth-child(2){
+          margin-bottom: 60px;
+        }
+      }
+    }
   }
 }
