@@ -1987,6 +1987,7 @@ body {
   background-image: url(../images/robot/bg2.jpg);
   background-size: cover;
   background-position: center center;
+
   .culture_list {
     display: flex;
 
@@ -2025,16 +2026,18 @@ body {
         }
 
       }
+
       &:nth-child(odd) {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
+
         .item_info {
 
           .item_title_cn {
             color: #333;
           }
-  
+
           .item_title_en {
             color: #333;
           }
@@ -2042,4 +2045,150 @@ body {
       }
     }
   }
+}
+
+.job_top{
+  background-color: #f9fafb;
+  .welfare_title {
+    span {
+      background-color: #f9fafb;
+    }
+  }
+}
+
+.job_intro {
+  padding-top: 115px;
+  margin-bottom: 80px;
+
+  .intro_title {
+    font-size: 48px;
+    color: #333333;
+    font-family: "SourceHanSansCN";
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .intro_content {
+    color: #666666;
+    font-family: "SourceHanSansCN";
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    line-height: 2em;
+    margin-bottom: 35px;
+  }
+
+  .intro_box {
+    display: flex;
+    justify-content: space-between;
+
+    .intro_left,
+    .intro_mid,
+    .intro_right {
+      width: 505px;
+      height: 660px;
+      display: flex;
+      flex-direction: column;
+
+      .intro_item {
+        overflow: hidden;
+        margin-bottom: 30px;
+
+        >img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .intro_left {}
+
+    .intro_mid {}
+
+    .intro_right {
+      flex-direction: row;
+    }
+
+    .intro_item {
+      position: relative;
+
+      .item_title {
+        position: absolute;
+        font-size: 20px;
+        color: #ffffff;
+        font-family: "SourceHanSansCN";
+        font-weight: normal;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 54px;
+        line-height: 54px;
+        background-color: rgba(0, 0, 0, 0.6);
+        text-align: center;
+      }
+    }
+  }
+}
+
+.welfare_title {
+  background: url(../images/job/title_line.jpg) repeat-x left center;
+  text-align: center;
+  margin-bottom: 50px;
+
+  span {
+    font-size: 48px;
+    background-color: #ffffff;
+    padding: 0 32px;
+    display: inline-block;
+  }
+}
+
+.welfare_list {
+  display: flex;
+  flex-wrap: wrap;
+
+  .welfare_item {
+    width: calc(100%/3 - 42px);
+    height: 276px;
+    margin-right: 63px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    position: relative;
+    background-color: #ffffff;
+    &::after{
+      position: absolute;
+      content: "";
+      width: 80px;
+      height: 2px;
+      background-color: #b82124;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    .item_icon {
+      margin-bottom: 30px;
+    }
+
+    .item_title {
+      font-size: 30px;
+      color: #333333;
+      font-family: "SourceHanSansCN";
+      font-weight: normal;
+    }
+  }
+}
+
+.job_info{
+
 }
