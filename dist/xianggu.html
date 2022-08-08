@@ -16,11 +16,6 @@
   <link rel="stylesheet" href="css/response.css">
   <link rel="stylesheet" href="iconfont/iconfont.css">
   <link href="https://cdn.bootcdn.net/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-  <!--引用百度地图API-->
-  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=DOY76srUcSCyvMGWxbtIYp246TCG5n8D"></script>
-  <script type="text/javascript"
-    src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
-  <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
   <!--[if lt IE 9]>
   <script src="js/html5shiv.min.js"></script>
   <script src="js/respond.min.js"></script>
@@ -43,10 +38,10 @@
           <li><a href="news.html">新闻动态</a></li>
           <li><a href="robot.html">朗电机器人</a></li>
           <li><a href="wenxin.html">问信材料</a></li>
-          <li><a href="xianggu.html">谷乡智能</a></li>
+          <li class="active"><a href="xianggu.html">谷乡智能</a></li>
           <li><a href="contact.html">奥斯坦丁软件</a></li>
           <li><a href="contact.html">联系方式</a></li>
-          <li class="active"><a href="job.html">招贤纳士</a></li>
+          <li><a href="job.html">招贤纳士</a></li>
         </ul>
         <div class="header_right">
           <a href="#">EN</a> | <a href="#"><img src="./images/icon/1.png" /></a>
@@ -57,61 +52,98 @@
   <!-- 海报 -->
   <div class="inner_banner" style="background-image: url(./images/news/banner.jpg);">
     <div class="container_zz">
-      <div class="title_b">新闻动态</div>
+      <div class="title_b">朗电机器人</div>
       <div class="title_s">苏州市朗电机器人有限公司是一家整体智能方案商</div>
     </div>
   </div>
-  <div class="contact_wrapper">
-    <div class="inner_common_title">
-      <div class="title_cn">联系我们</div>
-      <div class="title_en">Contact us</div>
-    </div>
-    <div>
-      <div class="map" id="map_box"></div>
-    </div>
-    <div class="contact_box">
-      <div class="box_left">
-        <img src="./images/contact/ewm.jpg" />
-        <div class="ewm_info">扫描二维码关注我们</div>
+  <div class="container_zz">
+    <ul class="inner_nav">
+      <li class="active">
+        <a href="#">公司介绍</a>
+      </li>
+      <li>
+        <a href="#">产品</a>
+      </li>
+      <li>
+        <a href="#">客户</a>
+      </li>
+    </ul>
+  </div>
+  <div class="robot_intro xianggu_intro">
+    <div class="container_zz">
+      <div class="intro_flex">
+        <div class="intro_left">
+          <div class="robot_title">公司介绍</div>
+          <div class="robot_title_en">
+            <div class="robot_border">About LD</div>
+          </div>
+          <div class="intro_content">
+            <p>谷乡智能隶属于朗电智能制造集团，主要聚焦于各类真空泵及电子产品的研发、生产和销售。</p>
+          </div>
+        </div>
+        <div class="intro_right">
+          <img src="./images/gu_xiang/1.png" />
+        </div>
       </div>
-      <ul class="box_right">
-        <li>
-          <div class="item_icon">
-            <img src="./images/contact/1.jpg" />
+    </div>
+  </div>
+  <div class="robot_pro xianggu_pro">
+    <div class="container_zz">
+      <div class="pro_flex">
+        <div class="pro_left">
+          <div class="robot_title">产品中心</div>
+          <div class="robot_title_en">
+            <div class="robot_border">Product center</div>
           </div>
-          <div class="item_info">
-            <div class="item_name">座机</div>
-            <div class="item_det">0512-63495989</div>
-          </div>
+        </div>
+      </div>
+      <ul class="pro_list">
+        <li class="pro_item">
+          <a href="#">
+            <img src="../images/robot/pro1.jpg" />
+          </a>
         </li>
-        <li>
-          <div class="item_icon">
-            <img src="./images/contact/1.jpg" />
-          </div>
-          <div class="item_info">
-            <div class="item_name">邮箱</div>
-            <div class="item_det">service@langdianrobot.com </div>
-          </div>
+        <li class="pro_item">
+          <a href="#">
+            <img src="../images/robot/pro2.jpg" />
+          </a>
         </li>
-        <li>
-          <div class="item_icon">
-            <img src="./images/contact/1.jpg" />
-          </div>
-          <div class="item_info">
-            <div class="item_name">手机</div>
-            <div class="item_det">13862515288</div>
-          </div>
+        <li class="pro_item">
+          <a href="#">
+            <img src="../images/robot/pro3.jpg" />
+          </a>
         </li>
-        <li>
-          <div class="item_icon">
-            <img src="./images/contact/1.jpg" />
-          </div>
-          <div class="item_info">
-            <div class="item_name">地址</div>
-            <div class="item_det">苏州市吴江区平望唐家湖大道788号</div>
-          </div>
+        <li class="pro_item">
+          <a href="#">
+            <img src="../images/robot/pro4.jpg" />
+          </a>
+        </li>
+        <li class="pro_item">
+          <a href="#">
+            <img src="../images/robot/pro5.jpg" />
+          </a>
+        </li>
+        <li class="pro_item">
+          <a href="#">
+            <img src="../images/robot/pro6.jpg" />
+          </a>
         </li>
       </ul>
+    </div>
+  </div>
+  <div class="robot_customer xianggu_customer">
+    <div class="container_zz">
+      <div class="customer_title">
+        <div class="robot_title">主要客户</div>
+        <div class="robot_title_en">
+          <div class="robot_border">Major customers</div>
+        </div>
+      </div>
+      <div class="xianggu_customer_logo">
+        <div class="logo_item">
+          <img src="./images/gu_xiang/logo.jpg" />
+        </div>
+      </div>
     </div>
   </div>
   <footer class="footer">
@@ -203,98 +235,16 @@
   <script src="https://cdn.bootcdn.net/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="js/nav.js"></script>
   <script>
-    //创建和初始化地图函数：
-    function initMap() {
-      createMap(); //创建地图
-      // setMapEvent(); //设置地图事件
-      addMapOverlay(); //向地图添加覆盖物
-      // if(document.body.clientWidth>768){
-      //     addMapControl(); //向地图添加控件
-      // }
-    }
-
-    function createMap() {
-      map = new BMap.Map("map_box");
-      poi = new BMap.Point(120.643897, 31.034704);
-      map.centerAndZoom(poi, 24);
-      var loadCount = 1;
-      map.addEventListener("tilesloaded", function () {
-        if (loadCount == 1) {
-          map.setCenter(poi);
-        }
-        loadCount = loadCount + 1;
-      });
-    }
-
-    function setMapEvent() {
-      map.enableScrollWheelZoom();
-      map.enableKeyboard();
-      map.enableDragging();
-      map.enableDoubleClickZoom()
-    }
-
-    function addClickHandler(target, window) {
-      target.addEventListener("click", function () {
-        target.openInfoWindow(window);
-      });
-    }
-
-    function addMapOverlay() {
-      // 百度地图API功能
-      var content = `
-            <div class="pop_map">
-              <div class="pop_content">
-                <div class="pop_title">苏州朗电机器人有限公司</div>
-                <div class="pop_addr">地址：苏州市吴江区平望唐家湖大道788号</div>
-              </div>
-        `;
-
-      //创建检索信息窗口对象
-      var searchInfoWindow = null;
-      searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
-        title: "苏州朗电机器人有限公司", //标题
-        width: 374, //宽度
-        height: 130, //高度
-        panel: "panel", //检索结果面板
-        enableAutoPan: true, //自动平移
-        enableSendToPhone: false,
-        searchTypes: []
-      });
-      let isOpen = false;
-      var marker = new BMap.Marker(poi); //创建marker对象
-      // marker.addEventListener("click", function (e) {
-      //   e.domEvent.preventDefault();
-      //   e.domEvent.stopPropagation();
-      //   isOpen ? searchInfoWindow.close(marker) : searchInfoWindow.open(marker);
-      //   isOpen = !isOpen;
-      // })
-      // map.addEventListener("click", function (e) {
-      //   isOpen && searchInfoWindow.close(marker);
-      //   isOpen = false;
-      // })
-      searchInfoWindow.open(marker)
-      // map.addOverlay(marker); //在地图中添加marker
-    }
-    //向地图添加控件
-    // function addMapControl() {
-    //   var scaleControl = new BMap.ScaleControl({
-    //     anchor: BMAP_ANCHOR_BOTTOM_LEFT
-    //   });
-    //   scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
-    //   map.addControl(scaleControl);
-    //   var navControl = new BMap.NavigationControl({
-    //     anchor: BMAP_ANCHOR_TOP_LEFT,
-    //     type: BMAP_NAVIGATION_CONTROL_LARGE
-    //   });
-    //   map.addControl(navControl);
-    //   var overviewControl = new BMap.OverviewMapControl({
-    //     anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
-    //     isOpen: true
-    //   });
-    //   map.addControl(overviewControl);
-    // }
-    var map, poi;
-    initMap();
+    var mySwiperCustomer = new Swiper('#swiper_customer', {
+      // autoplay: {
+      //   delay: 8000
+      // },
+      loop: true,
+      navigation: {
+        nextEl: '.banner-next',
+        prevEl: '.banner-prev',
+      },
+    });
   </script>
 </body>
 
