@@ -31,7 +31,7 @@ $("#scroll_round").on("click", function () {
     $('html,body').animate({ scrollTop: 0 }, 500)
 })
 
-function client () {
+function client() {
     if (window.innerHeight !== undefined) {
         //ie9及其以上的版本的写法
         return {
@@ -53,9 +53,11 @@ function client () {
     }
 }
 
-AOS.init({
-    offset: 10,
-    duration: 600,
-    easing: 'ease-in-sine',
-    delay: 100,
+var wow = new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 0,
+    mobile: true,
+    live: true
 });
+wow.init();
