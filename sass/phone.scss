@@ -133,26 +133,6 @@ body {
     height: calc(100% - 2.2rem);
     background-color: #fff;
 
-    .header_right {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      border-bottom: none;
-      margin-top: .375rem;
-
-      a {
-        display: inline-block;
-        height: .85rem;
-        line-height: .85rem;
-        border-radius: 50%;
-        background-color: #019ed5;
-        width: .85rem;
-        text-align: center;
-        color: #fff;
-        font-size: .375rem;
-      }
-    }
-
     >li {
       position: relative;
       display: block;
@@ -164,32 +144,9 @@ body {
 
       a {
         line-height: 2rem;
-
-        >img {
-          width: .8rem;
-          margin-right: .25rem;
-        }
-
-        .up_icon {
-          margin-left: .5rem;
-          position: relative;
-          top: 0;
-
-          &.visible_xs {
-            display: inline-block !important;
-          }
-
-          &.popupShow {
-            img {
-              transform: rotate(-180deg);
-            }
-          }
-
-          img {
-            transition: all .5s;
-            width: .425rem
-          }
-        }
+      }
+      .childMenu{
+        display: none;
       }
     }
 
@@ -499,9 +456,14 @@ body {
   }
 
   .iproduct_show {
+    padding-bottom: 1rem;
+    .swiper-container .swiper-wrapper .swiper-slide{
+      width: 100% !important;
+    }
     .product_item {
       display: flex;
       flex-wrap: wrap;
+
 
       .item_left {
         overflow: hidden;
@@ -530,6 +492,7 @@ body {
             padding-left: 1.5rem;
             display: flex;
             align-items: flex-end;
+            display: none;
             img{
               width: 6.225rem;
             }
@@ -544,11 +507,9 @@ body {
             justify-content: center;
 
             .item_title {
-              display: flex;
-              align-items: flex-end;
-              justify-content: flex-end;
               width: 100%;
               margin-bottom: .5rem;
+              text-align: right;
 
               span {
                 font-size: 1.575rem;

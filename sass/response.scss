@@ -1,11 +1,24 @@
 @charset "utf-8";
 /* CSS Document */
 
-@media screen and (min-width: 1920px) {
+@media screen and (max-width: 1920px) {
   .inner_banner {
 
     img {
       width: 100%;
+    }
+  }
+  .i_news {
+
+    .news_swiper {
+
+      .banner-prev {
+        left: calc(1980px - 50%);
+      }
+
+      .banner-next {
+        right: calc(1980px - 50%);
+      }
     }
   }
 }
@@ -369,81 +382,6 @@
 
         img {
           width: .78vw;
-        }
-      }
-    }
-  }
-
-  .i_news {
-    margin-bottom: 2.5vw;
-
-    .news_swiper {
-      margin-top: 3vw;
-
-      .swiper-container {
-        width: calc(100% + 7.5vw);
-        margin-left: -3.75vw;
-        padding-bottom: 6.25vw;
-      }
-
-      .swiper-slide {
-
-        >img {
-          border-radius: .625vw;
-        }
-
-        .content {
-          width: 16.33vw;
-          height: 14.14vw;
-          left: 1.95vw;
-          top: 4.6875vw;
-          border-radius: .39vw;
-          box-shadow: 0 .39vw .39vw rgba($color: #a7a7a7, $alpha: .30);
-          padding: 1.17vw .55vw 1.17vw 1.17vw;
-
-          .title {
-            font-size: .976vw;
-            line-height: 1.4vw;
-            margin-bottom: .976vw;
-          }
-
-          .details {
-            font-size: .59vw;
-            line-height: 1.09vw;
-            margin-bottom: 1.17vw;
-          }
-
-          .time {
-            font-size: .586vw;
-            margin-bottom: 1.09vw;
-          }
-
-          .more {
-            width: 4.57vw;
-            height: 1.33vw;
-            line-height: 1.33vw;
-            margin-right: .78vw;
-
-            &::after {
-              border-width: .66vw .39vw;
-            }
-          }
-        }
-      }
-
-      .banner-prev {
-        left: 21.64vw;
-
-        >img {
-          width: 1.875vw;
-        }
-      }
-
-      .banner-next {
-        right: 21.64vw;
-
-        >img {
-          width: 1.875vw;
         }
       }
     }
@@ -1446,7 +1384,21 @@
   }
 }
 
-@media screen and (max-width: 1080) {}
+@media screen and (max-width: 1280px) {
+  .i_news {
+
+    .news_swiper {
+
+      .banner-prev {
+        left: calc(2180px - 50%);
+      }
+
+      .banner-next {
+        right: calc(2180px - 50%);
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 980px) {
   .header_nav {
