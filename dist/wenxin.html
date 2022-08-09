@@ -50,26 +50,26 @@
     </div>
   </nav>
   <!-- 海报 -->
-  <div class="inner_banner" style="background-image: url(./images/news/banner.jpg);">
+  <div class="inner_banner" style="background-image: url(./images/wenxin/banner.jpg);">
     <div class="container_zz">
       <div class="title_b">问信材料</div>
       <div class="title_s">问信材料有限公司是一家整体智能方案商</div>
     </div>
   </div>
   <div class="container_zz">
-    <ul class="inner_nav">
+    <ul class="inner_nav" id="scroll_nav">
       <li class="active">
-        <a href="#">公司介绍</a>
+        <a  href="javascript:;" data-scroll="place1">公司介绍</a>
       </li>
       <li>
-        <a href="#">产品</a>
+        <a  href="javascript:;" data-scroll="place2">产品</a>
       </li>
       <li>
-        <a href="#">客户</a>
+        <a  href="javascript:;" data-scroll="place3">客户</a>
       </li>
     </ul>
   </div>
-  <div class="robot_intro xianggu_intro">
+  <div class="robot_intro xianggu_intro" id="place1">
     <div class="container_zz">
       <div class="intro_flex">
         <div class="intro_left">
@@ -87,7 +87,7 @@
       </div>
     </div>
   </div>
-  <div class="robot_pro xianggu_pro">
+  <div class="robot_pro xianggu_pro" id="place2">
     <div class="container_zz">
       <div class="pro_flex">
         <div class="pro_left">
@@ -131,7 +131,7 @@
       </ul>
     </div>
   </div>
-  <div class="robot_customer xianggu_customer">
+  <div class="robot_customer xianggu_customer" id="place3">
     <div class="container_zz">
       <div class="customer_title">
         <div class="robot_title">主要客户</div>
@@ -245,6 +245,11 @@
         prevEl: '.banner-prev',
       },
     });
+    $("#scroll_nav").click(function(e){
+      if(e.target.dataset.scroll){
+        $('html,body').animate({scrollTop: $('#'+e.target.dataset.scroll).offset().top}, 1000)
+      }
+    })
   </script>
 </body>
 

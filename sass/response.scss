@@ -66,6 +66,7 @@
       width: 6.25vw;
       height: 1.875vw;
       border-radius: .9375vw;
+      font-size: .8vw;
 
       a {
         font-size: 1vw;
@@ -1447,4 +1448,36 @@
 
 @media screen and (max-width: 1080) {}
 
-@media screen and (max-width: 980px) {}
+@media screen and (max-width: 980px) {
+  .header_nav {
+    height: 6.375vw;
+
+    .header_logo {
+      img {
+        width: 12vw;
+      }
+    }
+
+    .header_list {
+
+      >li {
+        margin: 0 0.875vw;
+      }
+    }
+
+    .header_right {
+      width: 6.25vw;
+      height: 1.875vw;
+      border-radius: .9375vw;
+
+      a {
+        font-size: 1vw;
+        margin: 0 .75vw;
+      }
+
+      img {
+        width: 1.1875vw;
+      }
+    }
+  }
+}

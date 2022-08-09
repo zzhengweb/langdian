@@ -50,35 +50,35 @@
     </div>
   </nav>
   <!-- 海报 -->
-  <div class="inner_banner" style="background-image: url(./images/news/banner.jpg);">
+  <div class="inner_banner" style="background-image: url(./images/robot/banner.jpg);">
     <div class="container_zz">
       <div class="title_b">朗电机器人</div>
       <div class="title_s">苏州市朗电机器人有限公司是一家整体智能方案商</div>
     </div>
   </div>
   <div class="container_zz">
-    <ul class="inner_nav">
+    <ul class="inner_nav" id="scroll_nav">
       <li class="active">
-        <a href="#">公司介绍</a>
+        <a href="javascript:;" data-scroll="place1">公司介绍</a>
       </li>
       <li>
-        <a href="#">产品</a>
+        <a href="javascript:;" data-scroll="place2">产品</a>
       </li>
       <li>
-        <a href="#">资质证书</a>
+        <a href="javascript:;" data-scroll="place3">资质证书</a>
       </li>
       <li>
-        <a href="#">客户</a>
+        <a href="javascript:;" data-scroll="place4">客户</a>
       </li>
       <li>
-        <a href="#">企业文化</a>
+        <a href="javascript:;" data-scroll="place5">企业文化</a>
       </li>
       <li>
-        <a href="#">联系我们</a>
+        <a href="contact.html">联系我们</a>
       </li>
     </ul>
   </div>
-  <div class="robot_intro">
+  <div class="robot_intro" id="place1">
     <div class="container_zz">
       <div class="intro_flex">
         <div class="intro_left">
@@ -109,7 +109,7 @@
       </div>
     </div>
   </div>
-  <div class="robot_pro">
+  <div class="robot_pro" id="place2">
     <div class="container_zz">
       <div class="pro_flex">
         <div class="pro_left">
@@ -159,7 +159,7 @@
       </ul>
     </div>
   </div>
-  <div class="robot_customer">
+  <div class="robot_customer" id="place4">
     <div class="container_zz">
       <div class="customer_title text-center">
         <div class="robot_title">主要客户</div>
@@ -273,7 +273,7 @@
       </div>
     </div>
   </div>
-  <div class="robot_culture">
+  <div class="robot_culture" id="place5">
     <div class="container_zz">
       <div class="culture_title text-center">
         <div class="robot_title">企业文化</div>
@@ -412,6 +412,12 @@
         prevEl: '.banner-prev',
       },
     });
+
+    $("#scroll_nav").click(function(e){
+      if(e.target.dataset.scroll){
+        $('html,body').animate({scrollTop: $('#'+e.target.dataset.scroll).offset().top}, 1000)
+      }
+    })
   </script>
 </body>
 

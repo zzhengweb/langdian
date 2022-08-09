@@ -12,11 +12,25 @@
   src: url('../fonts/DIN-Light') format('truetype');
 }
 
+// @font-face {
+//   font-family: "SourceHanSansCN";
+//   font-weight: 500;
+//   /* Project id 2621899 */
+//   src: url('../fonts/SourceHanSansCN-Regular.otf') format('truetype');
+// }
+
 @font-face {
   font-family: "SourceHanSansCN";
   font-weight: normal;
   /* Project id 2621899 */
-  src: url('../fonts/SourceHanSansCN.otf') format('truetype');
+  src: url('../fonts/SourceHanSansCN-Normal.otf') format('truetype');
+}
+
+@font-face {
+  font-family: "SourceHanSansCN";
+  font-weight: 700;
+  /* Project id 2621899 */
+  src: url('../fonts/SourceHanSansCN-Bold.otf') format('truetype');
 }
 
 @font-face {
@@ -28,44 +42,16 @@
 
 @font-face {
   font-family: "SourceHanSansCN";
-  font-weight: normal;
-  /* Project id 2621899 */
-  src: url('../fonts/SourceHanSansCN-Normal.otf') format('truetype');
-}
-
-@font-face {
-  font-family: "Alibaba";
-  font-weight: 700;
-  /* Project id 2621899 */
-  src: url('../fonts/Alibaba-PuHuiTi-Bold.otf') format('truetype');
-}
-
-@font-face {
-  font-family: "Alibaba";
-  font-weight: 900;
-  /* Project id 2621899 */
-  src: url('../fonts/Alibaba-PuHuiTi-Heavy.otf') format('truetype');
-}
-
-@font-face {
-  font-family: "Alibaba";
-  font-weight: 500;
-  /* Project id 2621899 */
-  src: url('../fonts/Alibaba-PuHuiTi-Regular.otf') format('truetype');
-}
-
-@font-face {
-  font-family: "Alibaba";
   font-weight: 600;
   /* Project id 2621899 */
-  src: url('../fonts/Alibaba-PuHuiTi-Medium.otf') format('truetype');
+  src: url('../fonts/SourceHanSansCN-Medium.otf') format('truetype');
 }
 
 @font-face {
-  font-family: "Alibaba";
+  font-family: "SourceHanSansCN";
   font-weight: 100;
   /* Project id 2621899 */
-  src: url('../fonts/Alibaba-PuHuiTi-Light.otf') format('truetype');
+  src: url('../fonts/SourceHanSansCN-Light.otf') format('truetype');
 }
 
 input,
@@ -109,7 +95,7 @@ p {
 body {
   min-height: 1000px;
   background-color: #fff;
-  font-family: "Alibaba", "Microsoft YaHei", Helvetica, Arial, "Helvetica Neue", sans-serif;
+  font-family: "SourceHanSansCN", "Microsoft YaHei", Helvetica, Arial, "Helvetica Neue", sans-serif;
 }
 
 * {
@@ -230,6 +216,7 @@ body {
     background-color: rgba($color: #fff, $alpha: .4);
     border-radius: 15px;
     color: #fff;
+    font-size: 16px;
 
     a {
       display: inline-block;
