@@ -1428,11 +1428,53 @@ body {
 
   .show_left {
     width: 100%;
-    height: 14.15rem;
     margin-bottom: 1rem;
-    >img{
-      width: 100%;
-      height: 100%;
+    .show_item {
+
+      img {
+        width: 100%;
+      }
+
+      .bg_box {
+        height: 1.75rem;
+        line-height: 1.75rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 1.75rem;
+        line-height: 1.75rem;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        color: white;
+        font-size: .4rem;
+        padding: 0 2.5rem 0 .7rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    .swiper-pagination {
+      height: .2rem;
+      bottom: .875rem;
+      right: 0;
+      left: auto;
+      display: inline-block;
+      width: 4rem;
+      text-align: center;
+      .my-bullet {
+        width:.2rem;
+        height: .2rem;
+        background-color: #fff;
+        display: inline-block;
+        border-radius: .1rem;
+        margin:0 .1rem;
+        transition: all .5s;
+      }
+
+      .my-bullet-active {
+        width: .675rem;
+      }
     }
   }
 
@@ -2401,7 +2443,7 @@ body {
     margin-bottom: 1rem;
 
     .a_btn {
-      width: 100px;
+      width: 2.5rem;
       flex: 1;
       overflow: hidden;
       text-overflow: ellipsis;

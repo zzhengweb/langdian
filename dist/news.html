@@ -67,7 +67,35 @@
     </ul>
     <div class="news_show">
       <div class="show_left">
-        <img src="./images/news/1.jpg" />
+        <div class="swiper-container" id="news_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="show_item">
+                <a href="news_detail.html"><img src="./images/news/1.jpg" /></a>
+                <div class="bg_box">
+                  朗电引才｜人到苏州才有为
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="show_item">
+                <a href="news_detail.html"><img src="./images/news/1.jpg" /></a>
+                <div class="bg_box">
+                  朗电引才｜人到苏州才有为
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="show_item">
+                <a href="news_detail.html"><img src="./images/news/1.jpg" /></a>
+                <div class="bg_box">
+                  朗电引才｜人到苏州才有为
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
       <ul class="show_right">
         <li>
@@ -351,65 +379,19 @@
   <script src="https://cdn.bootcdn.net/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="js/nav.js"></script>
   <script>
-    var mySwiper1 = new Swiper('#swiper1', {
+    var mySwiper1 = new Swiper('#news_swiper', {
       // autoplay: {
       //   delay: 8000
       // },
       loop: true,
-      navigation: {
-        nextEl: '.banner-next',
-        prevEl: '.banner-prev',
-      },
       pagination: {
         el: '.swiper-pagination',
         bulletClass: 'my-bullet',
         bulletActiveClass: 'my-bullet-active',
         clickable: true,
-        renderBullet: function (index, className) {
-          return `<span class="${className}">
-            <span class="num">0${index + 1}</span>  
-          </span>`
-        },
       },
     });
-    var mySwiper2 = new Swiper('#swiper2', {
-      slidesPerView: 4,
-      slidesPerGroup: 4,
-      spaceBetween: 70,
-      loop: true,
-      navigation: {
-        nextEl: '.banner-next',
-        prevEl: '.banner-prev',
-      },
-      pagination: {
-        el: '.pagination_count',
-        type: 'custom',
-        renderCustom: function (swiper, current, total) {
-          if (current < 9) current = "0" + current;
-          if (total < 9) total = "0" + total;
-          return total + '/' + current;
-        }
-      },
-    });
-    var mySwiper3 = new Swiper('#swiper3', {
-      slidesPerView: 3,
-      spaceBetween: 70,
-      centeredSlides: true,
-      loop: true,
-      navigation: {
-        nextEl: '.banner-next',
-        prevEl: '.banner-prev',
-      },
-      on: {
-        init: function (swiper) {
-          console.log(this);
 
-        },
-        slideChange: function () {
-          console.log(this);
-        },
-      },
-    });
   </script>
 </body>
 
