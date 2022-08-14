@@ -729,25 +729,19 @@ body {
     }
 
     .banner-prev {
+      img {
+        transform: rotate(180deg);
+      }
+    }
+    .banner-next,.banner-prev{
       width: 8vw;
       height: 8vw;
       text-align: center;
       line-height: 8vw;
       background-color: #616161;
-
-      img {
-        transform: rotate(180deg);
-        width: 1vw;
+      &:hover{
+        background-color: #b82023;
       }
-    }
-
-    .banner-next {
-      width: 8vw;
-      height: 8vw;
-      text-align: center;
-      line-height: 8vw;
-      background-color: #b82023;
-
       img {
         width: 1vw;
       }
@@ -854,24 +848,31 @@ body {
     }
 
     .banner-prev {
-      position: absolute;
-      top: 40%;
       left: 2.64vw;
-      z-index: 8;
-      transform: translateY(-50%);
-      >img{
-        width:10vw;
-      }
     }
 
     .banner-next {
+      right: 2.64vw;
+    }
+
+    .banner-next,.banner-prev{
       position: absolute;
       top: 40%;
-      right: 2.64vw;
       z-index: 8;
       transform: translateY(-50%);
       >img{
         width:10vw;
+        &:nth-child(2){
+          display: none;
+        }
+      }
+      &:hover{
+        >img{
+          display: none;
+          &:nth-child(2){
+            display: block;
+          }
+        }
       }
     }
   }
@@ -936,6 +937,9 @@ body {
           margin: 0 auto;
           margin-bottom: .2rem;
           font-size: .4rem;
+          font-family: "DIN";
+          font-size: 16px;
+          font-weight: bold;
         }
 
         .item_title {
@@ -1101,19 +1105,28 @@ body {
       }
 
       .details_pre {
-        position: absolute;
-        bottom: .5rem;
         right: 2.975rem;
-        cursor: pointer;
-        z-index: 3;
       }
 
       .details_next {
-        position: absolute;
-        bottom: .5rem;
         right: .725rem;
+      }
+      .details_pre ,.details_next{
+        position: absolute;
+        bottom: 1rem;
         cursor: pointer;
         z-index: 3;
+        img:nth-child(2){
+          display: none;
+        }
+        &:hover{
+          img:nth-child(1){
+            display: none;
+          }
+          img:nth-child(2){
+            display: block;
+          }
+        }
       }
     }
 

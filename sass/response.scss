@@ -114,7 +114,7 @@
       }
 
       .swiper-pagination {
-        bottom: 5.1875vw;
+        bottom: 4.875vw;
 
         .my-bullet {
           width: 6.0625vw;
@@ -138,7 +138,7 @@
   }
 
   .i_common_title {
-    padding-top: 7.5vw;
+    padding-top: 7.1875vw;
 
     .title_cn {
       font-size: 3vw;
@@ -190,7 +190,7 @@
       li {
         width: 31.375vw;
         height: 4.875vw;
-        font-size: 1.75vw;
+        font-size: 1.5vw;
         line-height: 4.875vw;
 
         &::before {
@@ -220,14 +220,14 @@
 
             .item_bg {
               width: 20vw;
-              padding-left: 3.75vw;
+              padding-left: 3.4375vw;
             }
 
             .item_info {
               width: .625vw;
+              margin-bottom: 1.875vw;
 
               .item_title {
-                margin-bottom: 1.25vw;
 
                 span {
                   font-size: 3.9375vw;
@@ -260,6 +260,7 @@
               width: 10.875vw;
               height: 3.125vw;
               margin-top: 6.25vw;
+              margin-right: .625vw;
 
               a {
                 font-size: 1vw;
@@ -299,7 +300,7 @@
     }
 
     .field_swiper {
-      padding-top: 6vw;
+      padding-top: 6.25vw;
 
       .i_solution_title {
         margin-bottom: 2.8125vw;
@@ -390,7 +391,8 @@
   .i_service {
     background: url(../images/home/company/1/bg2.png) no-repeat left 22.5vw, #f7f7f7;
     background-size: auto 40vw;
-    padding-bottom: 7.625vw;
+    padding-bottom: 7.1875vw;
+    padding-top: .3125vw;
 
     .i_common_title {
       margin-bottom: 4.6875vw;
@@ -410,7 +412,7 @@
     }
 
     .service_list {
-      margin-bottom: 8.75vw;
+      margin-bottom: 7.5vw;
 
       li {
         margin-right: 2.5vw;
@@ -440,6 +442,7 @@
 
       .partner_left {
         width: .625vw;
+        padding-top: 1.875px;
 
         .title1 {
           font-size: 3.1875vw;
@@ -453,7 +456,7 @@
 
         .title3 {
           font-size: 1.25vw;
-          margin-bottom: .625vw;
+          margin-bottom: .3125vw;
         }
 
         .line {
@@ -723,7 +726,7 @@
   }
 
   .news_change {
-    padding-top: 1.25vw;
+    padding-top: .9375vwvw;
 
     li {
       padding: 0 .4375vw;
@@ -826,9 +829,14 @@
 
       .item_date {
         width: 14.6875vw;
+        padding-top: .375vw;
 
         .item_days {
           font-size: 3.43vw;
+          height: 3.625vw;
+          line-height: 3.625vw;
+          padding-right: 1vw;
+          margin-right: .625vw;
         }
 
         .item_right {
@@ -1053,7 +1061,7 @@
     }
 
     .intro_content {
-      margin-bottom: 7.5vw;
+      margin-bottom: 7.8125vw;
 
       p {
         font-size: 1vw;
@@ -1080,11 +1088,19 @@
     &.xianggu_intro {
       height: 32.25vw;
     }
+    &.wenxin_intro{
+      height: 32.25vw;
+      .intro_flex {
+        .intro_right {
+          width: 41.875vw;
+        }
+      }
+    }
   }
 
   .robot_pro {
     padding-top: 9.375vw;
-    margin-bottom: 10vw;
+    margin-bottom: 8.125vw;
 
     &.xianggu_pro {
       padding-top: 6.25vw;
@@ -1095,13 +1111,16 @@
 
       .pro_left {
         width: .625vw;
+        .robot_title_en{
+          margin-bottom: 3.125vw;
+        }
       }
 
       .pro_right {
-
+        padding-top: 1vw;
         li {
           margin-left: 5.3125vw;
-          line-height: 4.5vw;
+          line-height: 3.75vw;
 
           &.active {
 
@@ -1135,10 +1154,11 @@
 
   .robot_customer {
     padding-top: 6.5625vw;
-    padding-bottom: 5.9375vw;
+    padding-bottom: 5.3125vw;
 
     &.xianggu_customer {
       padding-top: 5vw;
+      padding-bottom: 6.25vw;
     }
 
     .xianggu_customer_logo {
@@ -1156,7 +1176,7 @@
     }
 
     .robot_title_en {
-      margin-bottom: 1.5625vw;
+      margin-bottom: 2.1875vw;
     }
 
     .swiper-container {
@@ -1196,7 +1216,9 @@
   .robot_culture {
     padding-top: 7.125vw;
     padding-bottom: 10.3125vw;
-
+    .culture_title {
+      margin-bottom: .625px;
+    }
     .culture_list {
 
       .culture_item {
@@ -1233,7 +1255,7 @@
 
     .intro_content {
       font-size: 1.5vw;
-      margin-bottom: 2.1875vw;
+      margin-bottom: 2.5vw;
     }
 
     .intro_box {
@@ -1270,7 +1292,7 @@
   }
 
   .welfare_list {
-
+    padding-bottom: 6.875vw;
     .welfare_item {
       width: calc(100%/3 - 2.625vw);
       height: 17.25vw;
@@ -1307,8 +1329,8 @@
         .job_item_top {
           font-size: 1.25vw;
           padding: 0 .75vw;
-          height: 5.3125vw;
-          line-height: 5.25vw;
+          height: 5.625vw;
+          line-height: calc(5.625vw - 1px);
 
           .top_left {
             width: .625vw;
@@ -1343,7 +1365,7 @@
     }
 
     .pagination_list {
-      margin-bottom: 3.125vw;
+      margin-bottom: 3.75vw;
     }
   }
 
