@@ -302,11 +302,8 @@
     .field_swiper {
       padding-top: 6.25vw;
 
-      .i_solution_title {
-        margin-bottom: 2.8125vw;
-      }
-
       .swiper-wrapper {
+        padding-top: 2.8125vw;
         .swiper-slide {
 
           .slide_content {
@@ -1018,19 +1015,35 @@
   }
 
   .inner_nav {
-    padding-top: 1.25vw;
-
-    li {
-      padding: 0 .4375vw;
-      line-height: 5.25vw;
-      margin: 0 1vw;
-
-      a {
-        font-size: 1.25vw;
+    &.new_nav{
+      padding-top: 1.25vw;
+      li {
+        padding: 0 .4375vw;
+        line-height: 5.25vw;
+        margin: 0 1vw;
+  
+        a {
+          font-size: 1.25vw;
+        }
       }
-
+    }
+    li {
+      padding: 0 .25vw;
+      line-height: 4.1875vw;
+      margin: 0 1.25vw;
+      border-bottom: .1875vw solid transparent;
+  
+      a {
+        font-size: 1.125vw;
+        color: #999999;
+      }
+  
       &.active {
         border-bottom: .1875vw solid #b72023;
+  
+        a {
+          color: #b72023;
+        }
       }
     }
   }
@@ -1082,6 +1095,9 @@
         span {
           font-size: 2vw;
         }
+      }
+      &::after {
+        border-width: 4.4375vw 3.3125vw;
       }
     }
 

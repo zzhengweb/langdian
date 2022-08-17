@@ -1908,8 +1908,22 @@ body {
         font-size: .8rem;
         color: #b72023;
         font-family: "DIN";
-        font-weight: normal;
+        font-weight: bold;
       }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 0;
+      border-width: 1.775rem 1.325rem;
+      border-style: solid;
+      border-right-color: #ededed;
+      border-bottom-color: #ededed;
+      border-left-color: transparent;
+      border-top-color: transparent;
     }
   }
 
