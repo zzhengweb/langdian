@@ -1691,6 +1691,9 @@ body {
         font-family: "SourceHanSansCN";
         font-weight: bold;
         margin-bottom: 8px;
+        &:hover{
+          color: #b72023;
+        }
       }
 
       .item_content,
@@ -2052,6 +2055,7 @@ body {
         font-weight: bold;
       }
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -2638,6 +2642,144 @@ body {
     a {
       font-size: 20.8px;
       color: #a00c0f;
+    }
+  }
+}
+
+.news_detail2 {
+  padding-bottom: 290px;
+  .nav_bread {
+    height: 70px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 80px;
+
+    a {
+      font-size: 15px;
+      color: #666666;
+      font-weight: normal;
+      margin: 0 8px;
+    }
+  }
+
+  .news_title {
+    font-size: 45px;
+    font-weight: normal;
+    margin-bottom: 8px;
+  }
+
+  .title_line {
+    width: 150px;
+    height: 3px;
+    background-color: #b82024;
+    margin-bottom: 86px;
+  }
+
+  .detail_body {
+    width: 100%;
+    max-width: 1145px;
+    margin: 0 auto;
+    img{
+      max-width: 100%;
+      margin:0 auto;
+      display: block;
+    }
+  }
+
+  .news_content {
+    line-height: 2em;
+    font-size: 16px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 68px;
+
+    p {
+      font-size: 20px;
+      color: #333333;
+      line-height: 2em;
+    }
+  }
+
+  .news_type_list {
+    border-top: 1px solid #d2d2d2;
+
+    .type_item {
+      border-bottom: 1px solid #d2d2d2;
+      transition: all .5s;
+      padding:0 25px;
+
+      &:nth-child(even) {
+        background-color: #f8f8f8;
+      }
+
+      .item_header {
+        height: 122px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all .5s;
+
+        .type_name {
+          font-size: 26px;
+          color: #333333;
+        }
+
+        .type_btn {
+          width: 39px;
+          height: 39px;
+          position: relative;
+          cursor: pointer;
+
+          &::after {
+            content: "";
+            width: 39px;
+            height: 3px;
+            background-color: #000000;
+            position: absolute;
+            left: 0;
+            bottom: 18px;
+          }
+
+          &::before {
+            content: "";
+            width: 3px;
+            height: 39px;
+            background-color: #000000;
+            position: absolute;
+            left: 18px;
+            bottom: 0;
+            transition: all .5s;
+          }
+        }
+      }
+
+      .item_content {
+        height: 0;
+        overflow: hidden;
+        transition: all .5s;
+
+        p {
+          font-size: 16px;
+          line-height: 2em;
+          color: #666666;
+        }
+      }
+
+      &.active {
+        background-color: white;
+        .item_header {
+          height: 100px;
+          .type_btn {
+            &::before {
+              transform: rotate(90deg);
+            }
+          }
+        }
+        .item_content{
+          padding-bottom: 50px;
+        }
+      }
     }
   }
 }
