@@ -72,6 +72,24 @@
         &:first-child {
           width: 3.125vw;
         }
+        .childMenu {
+          width: 10vw;
+          padding-bottom: .625vw;
+          padding-top: .625vw;
+          border-bottom-left-radius: .25vw;
+          border-bottom-right-radius: .25vw;
+          box-shadow: 0 0 .5vw rgba(0, 0, 0, 0.2);
+          top: 2.9375vw;
+  
+          li {
+            padding: .3125vw 0;
+            line-height: 1.875vw;
+  
+            a {
+              font-size: 1vw;
+            }
+          }
+        }
       }
     }
 
@@ -216,7 +234,7 @@
           flex: 1;
 
           .item_header {
-            height: .625vw;
+            height: 22.125vw;
 
             .item_bg {
               width: 20vw;
@@ -587,6 +605,9 @@
             height: 3.75vw;
             line-height: 3.75vw;
             margin-right: 1.25vw;
+            img{
+              width:2.3125vw;
+            }
           }
 
           .item_intro {
@@ -613,7 +634,10 @@
           margin-left: 5.3125vw;
           line-height: 3.875vw;
 
-          >img {}
+          img {
+            width: 1.8125vw;
+            margin-right: .25vw;
+          }
 
           a {
             font-size: 1.25vw;
@@ -645,6 +669,7 @@
 
         >img {
           margin-right: .4375vw;
+          width: 2.4375vw;
         }
       }
     }
@@ -928,7 +953,7 @@
 
           .pop_map {
             width: 25vw;
-            height: 8vw;
+            height: 9vw;
             padding-top: .75vw;
 
             .pop_content {
@@ -943,7 +968,6 @@
 
               .pop_addr {
                 font-size: 1vw;
-                line-height: 1vw;
               }
             }
 
@@ -1090,6 +1114,7 @@
 
         img {
           margin-right: .5vw;
+          width:3.5vw;
         }
 
         span {
@@ -1244,6 +1269,9 @@
           width: 5.3125vw;
           height: 5.3125vw;
           margin-right: .75vw;
+          img{
+            width: 3.5625vw;
+          }
         }
 
         .item_info {
@@ -1315,6 +1343,9 @@
       margin-right: 3.9375vw;
       box-shadow: 0 0 1.25vw rgba(0, 0, 0, 0.1);
       margin-bottom: 3.75vw;
+      img{
+        width: 4.875vw;
+      }
 
       &::after {
         width: 5vw;
