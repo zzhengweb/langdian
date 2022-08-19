@@ -635,11 +635,20 @@ body {
       margin-bottom: 1.125rem;
     }
     .swiper-wrapper {
+      
       .swiper-slide {
         position: relative;
-
-        >img {
+        .solution_item {
           width: 100%;
+          transition: all .5s;
+  
+          >img {
+            width: 100%;
+          }
+  
+          &:hover {
+            transform: scale(1.05);
+          }
         }
 
         .slide_content {
@@ -1925,20 +1934,6 @@ body {
         font-family: "DIN";
         font-weight: bold;
       }
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      height: 0;
-      border-width: 1.775rem 1.325rem;
-      border-style: solid;
-      border-right-color: #ededed;
-      border-bottom-color: #ededed;
-      border-left-color: transparent;
-      border-top-color: transparent;
     }
   }
 
