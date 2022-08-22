@@ -691,6 +691,7 @@ body {
         .solution_item {
           width: 100%;
           transition: all .5s;
+          display: inline-block;
 
           >img {
             width: 100%;
@@ -2150,6 +2151,7 @@ body {
         display: inline-block;
         line-height: 60px;
         text-align: center;
+        cursor: pointer;
 
         &.active {
           position: relative;
@@ -2179,17 +2181,34 @@ body {
       }
     }
   }
-
+  #myPages .pro_list{
+    display: none;
+    &.active{
+      display: flex;
+    }
+  }
   .pro_list {
     display: flex;
     flex-wrap: wrap;
 
     .pro_item {
-      width: calc((100% / 3) - 40px);
       margin-right: 60px;
-      height: 466px;
+      width: calc((100% / 3) - 40px);
       margin-bottom: 32px;
-      overflow: hidden;
+      .item_img{
+        width: 100%;
+        height: 466px;
+        overflow: hidden;
+      }
+      h3{
+        color: #333333;
+        text-align: center;
+        margin: 0;
+        line-height: 2em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space:nowrap;
+      }
 
       &:nth-child(3n) {
         margin-right: 0;
@@ -2536,6 +2555,7 @@ body {
         height: 90px;
         line-height: 89px;
         border-bottom: 1px solid #e5e5e5;
+        cursor: pointer;
 
         .top_left {
           flex: 1;
@@ -2555,7 +2575,7 @@ body {
             display: inline-block;
             width: 100px;
             text-align: right;
-            cursor: pointer;
+            
           }
         }
       }

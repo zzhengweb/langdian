@@ -425,9 +425,9 @@
   <script src="https://cdn.bootcdn.net/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script src="js/nav.js"></script>
   <script>
-    $(".show_more").click(function () {
-      $(this).parent().parent().parent().siblings().removeClass("active");
-      $(this).parent().parent().parent().toggleClass("active");
+    $(".job_item_top").click(function () {
+      $(this).parent().siblings().removeClass("active");
+      $(this).parent().toggleClass("active");
     })
   </script>
 </body>
