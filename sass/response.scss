@@ -8,6 +8,7 @@
       width: 100%;
     }
   }
+
   .i_news {
 
     .news_swiper {
@@ -18,6 +19,247 @@
 
       .banner-next {
         right: calc(1980px - 50%);
+      }
+    }
+  }
+
+  .i_solution {
+
+    .solution_list {
+      margin-bottom: 2.86vw;
+
+      li {
+        width: 26.15vw;
+        height: 4.06vw;
+        font-size: 1.25vw;
+        line-height: 4.06vw;
+
+        &::before {
+          height: .21vw;
+        }
+
+        &::after {
+          border-width: 2.03vw 1.67vw;
+        }
+      }
+    }
+
+    .iproduct_show {
+      .product_item {
+
+        .item_left {
+          width: 45.99vw;
+          height: 42.08vw;
+        }
+
+        .item_right {
+
+          .item_header {
+            height: 20.94vw;
+            padding-top: 5.73vw;
+            padding-left: 4.69vw;
+            background: url(../images/home/product/bg1.png) no-repeat 3.39vw bottom;
+
+            .item_info {
+              padding-bottom: 1.56vw;
+
+              .item_title {
+                font-size: 1.91vw;
+                margin-bottom: 1.04vw;
+
+                span {
+                  font-size: 3.28vw;
+                  line-height: 3.125vw;
+                }
+              }
+
+              .item_content {
+
+                p {
+                  font-size: 1.04vw;
+                  line-height: 1.875vw;
+                }
+              }
+            }
+          }
+
+          .item_body {
+            padding-left: 3.91vw;
+
+            .item_img {
+              margin: 0 0.78vw;
+            }
+          }
+        }
+      }
+    }
+
+    .field_swiper {
+      .field_list {
+        .field_item {
+          padding: 0 .89vw;
+
+
+          .slide_content {
+            left: 1.3vw;
+            width: calc(100% - 2.6vw);
+            height: 2.76vw;
+
+            h3 {
+              font-size: 1.25vw;
+            }
+
+            >img {
+              width: 1.2vw;
+            }
+
+            &:nth-child(odd) {
+              bottom: .89vw;
+            }
+
+            &:nth-child(even) {
+              .slide_content {
+                top: .89vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .i_service {
+    background-size: 30.21vw 37.92vw;
+    background-position: left bottom;
+  
+    .service_list {
+  
+      li {
+        margin-right: 2.08vw;
+        width: calc(25% - 1.56vw);
+  
+        .item_content {
+          width: 21.04vw;
+          height: 6.875vw;
+          bottom: .52vw;
+          left: .83vw;
+  
+          .item_title {
+            font-size: 1.25vw;
+            line-height: 5.625vw;
+          }
+        }
+      }
+    }
+  
+    .i_partner {
+      padding-bottom: 4.17vw;
+      .partner_box {
+  
+        li {
+          margin-right: .3125vw;
+          height: 9.48vw;
+          margin-bottom: .89vw;
+  
+          &:hover {
+            box-shadow: 0 0 1.56vw rgba($color: #8b8b8b, $alpha: .4);
+          }
+        }
+  
+        .partner_list1 {
+          li {
+            width: calc((100% - 2.5vw) / 9);
+            img{
+              width: 8.33vw;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .i_contact {
+    margin-bottom: 4.95vw;
+    .contact_header {
+      height: 24.375vw;
+    }
+  
+    .i_contact_details {
+      height: 28.125vw;
+      margin-top: -12.24vw;
+  
+      .details_left {
+        height: 28.125vw;
+        width: 54.48vw;
+  
+        .details_pre {
+          right: 6.2vw;
+        }
+  
+        .details_next {
+          right: 1.51vw;
+        }
+  
+        .details_pre,
+        .details_next {
+          bottom: 1.04vw;
+        }
+      }
+  
+      .details_right {
+        height: 28.125vw;
+      }
+  
+      .details_info {
+        padding-top: 3.39vw;
+        padding-left: 5.73vw;
+        height: 5.21vw;
+  
+        li {
+          margin-bottom: 2.19vw;
+  
+          .item_icon {
+            width: 3.125vw;
+            height: 3.125vw;
+            line-height: 3.125vw;
+            margin-right: 1.04vw;
+  
+          }
+  
+          .item_intro {
+  
+            .item_title {
+              font-size: .99vw;
+              margin-bottom: .625vw;
+            }
+  
+            .item_text {
+              font-size: .99vw;
+            }
+          }
+        }
+      }
+  
+      .details_btn {
+        height: 7.4vw;
+        padding-left: 3.91vw;
+  
+        li {
+          width: 10.47vw;
+          height: 3.28vw;
+          border-radius: .21vw;
+          margin:0 1.82vw; 
+          line-height: 3.23vw;
+  
+          img {
+            width: 1.51vw;
+            margin-right: .3125vw;
+          }
+  
+          a {
+            font-size: 1.04vw;
+          }
+        }
       }
     }
   }
@@ -72,6 +314,7 @@
         &:first-child {
           width: 3.125vw;
         }
+
         .childMenu {
           width: 10vw;
           padding-bottom: .625vw;
@@ -80,11 +323,11 @@
           border-bottom-right-radius: .25vw;
           box-shadow: 0 0 .5vw rgba(0, 0, 0, 0.2);
           top: 2.9375vw;
-  
+
           li {
             padding: .3125vw 0;
             line-height: 1.875vw;
-  
+
             a {
               font-size: 1vw;
             }
@@ -156,494 +399,16 @@
   }
 
   .i_common_title {
-    padding-top: 7.1875vw;
+    padding-top: 5.83vw;
+    padding-bottom: 2.64vw;
 
     .title_cn {
-      font-size: 3vw;
-      margin-bottom: .625vw;
+      font-size: 2.76vw;
+      margin-bottom: .18vw;
     }
 
     .title_en {
-      font-size: 1.875vw;
-      margin-bottom: 1.25vw;
-    }
-
-    .title_more {
-      padding-top: .9375vw;
-
-      a {
-        font-size: 1.375vw;
-      }
-    }
-  }
-
-  .i_solution {
-
-    .i_solution_intro {
-      font-size: 1.25vw;
-      margin-bottom: 5.625vw;
-    }
-
-    .i_solution_title {
-      margin-bottom: 1.875vw;
-
-      .title_cn {
-        font-size: 2.5vw;
-
-        &::after {
-          width: 6.25vw;
-          margin-left: .9375vw;
-          margin-right: 5vw;
-        }
-      }
-
-      .title_en {
-        font-size: 1.75vw;
-      }
-    }
-
-    .solution_list {
-      margin-bottom: 3.125vw;
-
-      li {
-        width: 31.375vw;
-        height: 4.875vw;
-        font-size: 1.5vw;
-        line-height: 4.875vw;
-
-        &::before {
-          height: .25vw;
-        }
-
-        &::after {
-          border-width: 2.4375vw 2vw;
-        }
-      }
-    }
-
-    .iproduct_show {
-      .product_item {
-
-        .item_left {
-          width: 48vw;
-          height: 44.125vw;
-        }
-
-        .item_right {
-          width: .2vw;
-          flex: 1;
-
-          .item_header {
-            height: 22.125vw;
-
-            .item_bg {
-              width: 20vw;
-              padding-left: 3.4375vw;
-            }
-
-            .item_info {
-              width: .625vw;
-              margin-bottom: 1.875vw;
-
-              .item_title {
-
-                span {
-                  font-size: 3.9375vw;
-                  line-height: 3.75vw;
-
-                  &::after {
-                    height: 3.75vw;
-                    margin-left: .4375vw;
-                    margin-right: 1.25vw;
-                  }
-                }
-
-                font-size: 2vw;
-              }
-
-              .item_content {
-
-                p {
-                  font-size: 1.25vw;
-                  line-height: 2.125vw;
-                }
-              }
-            }
-          }
-
-          .item_body {
-            height: .625vw;
-
-            .item_more {
-              width: 10.875vw;
-              height: 3.125vw;
-              margin-top: 6.25vw;
-              margin-right: .625vw;
-
-              a {
-                font-size: 1vw;
-                line-height: 3.125vw;
-
-                &::after {
-                  width: .9375vw;
-                  right: 2.0625vw;
-                }
-
-                &::before {
-                  right: -3.3125vw;
-                }
-              }
-
-              &::after {
-                border-width: 1.5625vw .9375vw;
-              }
-            }
-
-            .item_img {
-              margin-left: 1.25vw;
-
-              img {
-                width: 18.0625vw;
-              }
-            }
-
-            &::after {
-              right: -.9375vw;
-              width: calc(100% + .9375vw);
-              height: 22.25vw;
-            }
-          }
-        }
-      }
-    }
-
-    .field_swiper {
-      padding-top: 6.25vw;
-
-      .swiper-wrapper {
-        padding-top: 2.8125vw;
-        .swiper-slide {
-
-          .slide_content {
-            left: 2.54vw;
-            width: calc(100% - 5.08vw);
-            height: 2.58vw;
-
-            h3 {
-              font-size: .976vw;
-            }
-          }
-
-          &:nth-child(odd) {
-            padding-top: 2.62vw;
-
-            .slide_content {
-              bottom: .9375vw;
-            }
-          }
-
-          &:nth-child(even) {
-            padding-bottom: 2.62vw;
-
-            .slide_content {
-              top: .82vw;
-
-              >a>img {
-                width: 1.29vw;
-              }
-            }
-          }
-        }
-      }
-
-      .field_action {
-        margin-top: 1.48vw;
-
-        .field-pagination {
-          width: 41vw;
-          height: 3.5vw;
-          line-height: 3.5vw;
-
-          .pagination_count {
-            margin-right: 10.5vw;
-            font-size: .797vw;
-
-            &::after {
-              width: 1.56vw;
-              left: -1.95vw;
-            }
-
-            &::before {
-              width: 9.179vw;
-              right: -9.57vw;
-            }
-          }
-        }
-      }
-
-      .banner-prev {
-        width: 3.9vw;
-        height: 3.5vw;
-        line-height: 3.5vw;
-
-        img {
-          width: .78vw;
-        }
-      }
-
-      .banner-next {
-        width: 3.9vw;
-        height: 3.5vw;
-        line-height: 3.5vw;
-
-        img {
-          width: .78vw;
-        }
-      }
-    }
-  }
-
-  .i_service {
-    background: url(../images/home/company/1/bg2.png) no-repeat left 22.5vw, #f7f7f7;
-    background-size: auto 40vw;
-    padding-bottom: 7.1875vw;
-    padding-top: .3125vw;
-
-    .i_common_title {
-      margin-bottom: 4.6875vw;
-    }
-
-    .service_title {
-      margin-bottom: 2.5vw;
-
-      .title_b {
-        font-size: 2.1875vw;
-        margin-bottom: .625vw;
-      }
-
-      .title_s {
-        font-size: 1.25vw;
-      }
-    }
-
-    .service_list {
-      margin-bottom: 7.5vw;
-
-      li {
-        margin-right: 2.5vw;
-        width: calc(25% - 1.875vw);
-
-        .item_content {
-          width: 19.75vw;
-          height: 5.625vw;
-          top: 7.25vw;
-          left: 1.5625vw;
-          padding-top: .8125vw;
-
-          .item_no {
-            width: 1.75vw;
-            height: 1.75vw;
-            margin-bottom: .5vw;
-          }
-
-          .item_title {
-            font-size: 1.25vw;
-          }
-        }
-      }
-    }
-
-    .i_partner {
-
-      .partner_left {
-        width: .625vw;
-        padding-top: 1.875px;
-
-        .title1 {
-          font-size: 3.1875vw;
-          margin-bottom: .9375vw;
-        }
-
-        .title2 {
-          font-size: 3.75vw;
-          margin-bottom: .5vw;
-        }
-
-        .title3 {
-          font-size: 1.25vw;
-          margin-bottom: .3125vw;
-        }
-
-        .line {
-          width: 4.6875vw;
-          margin-bottom: 3.75vw;
-        }
-
-        .change_btn {
-
-          .btn_pre {
-            margin-right: 1.875vw;
-          }
-
-          .btn_next,
-          .btn_pre {
-            >img {
-              width: 2.875vw;
-            }
-          }
-        }
-      }
-
-      .partner_right {
-        width: 74.375vw;
-
-        li {
-          margin-right: .25vw;
-          height: 10.625vw;
-          margin-bottom: .4375vw;
-
-          &:hover {
-            box-shadow: 0 0 1.875vw rgba($color: #8b8b8b, $alpha: .4);
-          }
-        }
-
-        .partner_list1 {
-
-          li {
-            width: calc((100% - 1.75vw) / 8);
-
-            img {
-              width: 7.25vw;
-            }
-          }
-        }
-
-        .partner_list2 {
-          display: flex;
-
-          li {
-            width: calc((100% - 1.5vw) / 7);
-
-            img {
-              width: 9.625vw;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .i_contact {
-    margin-bottom: 5.5vw;
-
-    .contact_header {
-      height: 29.25vw;
-
-      .header_content {
-        margin-top: -23.125vw;
-
-        .line {
-          width: 10.25vw;
-          margin-bottom: .3125vw;
-        }
-
-        .title {
-          font-size: 2.8125vw;
-          font-weight: 500;
-          margin-bottom: .625vw;
-        }
-
-        .details {
-          font-size: 1.25vw;
-        }
-
-      }
-    }
-
-    .i_contact_details {
-      height: 33.75vw;
-      margin-top: -13.25vw;
-
-      .details_left {
-        height: 33.75vw;
-        width: 57.875vw;
-
-        .details_pre {
-          bottom: 1.25vw;
-          right: 7.4375vw;
-
-          >img {
-            width: 4.125vw;
-          }
-        }
-
-        .details_next {
-          bottom: 1.25vw;
-          right: 1.8125vw;
-
-          >img {
-            width: 4.125vw;
-          }
-        }
-      }
-
-      .details_right {
-        width: 6.25vw;
-        height: 33.75vw;
-      }
-
-      .details_info {
-        padding-top: 4.375vw;
-        padding-left: 3.75vw;
-        height: 6.25vw;
-
-        li {
-          margin-bottom: 2.5vw;
-
-          .item_icon {
-            width: 3.75vw;
-            height: 3.75vw;
-            line-height: 3.75vw;
-            margin-right: 1.25vw;
-            img{
-              width:2.3125vw;
-            }
-          }
-
-          .item_intro {
-            width: .625vw;
-
-            .item_title {
-              font-size: 1.1875vw;
-            }
-
-            .item_text {
-              font-size: 1.1875vw;
-            }
-          }
-        }
-      }
-
-      .details_btn {
-        height: 8.875vw;
-
-        li {
-          width: 12.75vw;
-          height: 3.9375vw;
-          border-radius: .25vw;
-          margin-left: 5.3125vw;
-          line-height: 3.875vw;
-
-          img {
-            width: 1.8125vw;
-            margin-right: .25vw;
-          }
-
-          a {
-            font-size: 1.25vw;
-          }
-        }
-      }
+      font-size: 1.84vw;
     }
   }
 
@@ -1039,32 +804,34 @@
   }
 
   .inner_nav {
-    &.new_nav{
+    &.new_nav {
       padding-top: 1.25vw;
+
       li {
         padding: 0 .4375vw;
         line-height: 5.25vw;
         margin: 0 1vw;
-  
+
         a {
           font-size: 1.25vw;
         }
       }
     }
+
     li {
       padding: 0 .25vw;
       line-height: 4.1875vw;
       margin: 0 1.25vw;
       border-bottom: .1875vw solid transparent;
-  
+
       a {
         font-size: 1.125vw;
         color: #999999;
       }
-  
+
       &.active {
         border-bottom: .1875vw solid #b72023;
-  
+
         a {
           color: #b72023;
         }
@@ -1114,13 +881,14 @@
 
         img {
           margin-right: .5vw;
-          width:3.5vw;
+          width: 3.5vw;
         }
 
         span {
           font-size: 2vw;
         }
       }
+
       &::after {
         border-width: 4.4375vw 3.3125vw;
       }
@@ -1129,8 +897,10 @@
     &.xianggu_intro {
       height: 32.25vw;
     }
-    &.wenxin_intro{
+
+    &.wenxin_intro {
       height: 32.25vw;
+
       .intro_flex {
         .intro_right {
           width: 41.875vw;
@@ -1152,13 +922,15 @@
 
       .pro_left {
         width: .625vw;
-        .robot_title_en{
+
+        .robot_title_en {
           margin-bottom: 3.125vw;
         }
       }
 
       .pro_right {
         padding-top: 1vw;
+
         li {
           margin-left: 5.3125vw;
           line-height: 3.75vw;
@@ -1257,9 +1029,11 @@
   .robot_culture {
     padding-top: 7.125vw;
     padding-bottom: 10.3125vw;
+
     .culture_title {
-      margin-bottom: .625px;
+      margin-bottom: .625vw;
     }
+
     .culture_list {
 
       .culture_item {
@@ -1269,7 +1043,8 @@
           width: 5.3125vw;
           height: 5.3125vw;
           margin-right: .75vw;
-          img{
+
+          img {
             width: 3.5625vw;
           }
         }
@@ -1337,13 +1112,15 @@
 
   .welfare_list {
     padding-bottom: 6.875vw;
+
     .welfare_item {
       width: calc(100%/3 - 2.625vw);
       height: 17.25vw;
       margin-right: 3.9375vw;
       box-shadow: 0 0 1.25vw rgba(0, 0, 0, 0.1);
       margin-bottom: 3.75vw;
-      img{
+
+      img {
         width: 4.875vw;
       }
 
@@ -1451,65 +1228,67 @@
       }
     }
   }
+
   .news_detail2 {
     padding-bottom: 18.125vw;
+
     .nav_bread {
       height: 4.375vw;
       margin-bottom: 5vw;
-  
+
       a {
         font-size: .9375vw;
         margin: 0 .5vw;
       }
     }
-  
+
     .news_title {
       font-size: 2.8125vw;
       margin-bottom: .5vw;
     }
-  
+
     .title_line {
       width: 9.375vw;
       height: .1875vw;
       margin-bottom: 5.375vw;
     }
-  
+
     .detail_body {
       max-width: none;
       width: 71.5%;
     }
-  
+
     .news_content {
       font-size: 1vw;
       padding-bottom: 4.25vw;
-  
+
       p {
         font-size: 1.25vw;
       }
     }
-  
+
     .news_type_list {
-  
+
       .type_item {
-        padding:0 1.5625vw;
-  
+        padding: 0 1.5625vw;
+
         .item_header {
           height: 7.625vw;
-  
+
           .type_name {
             font-size: 1.625vw;
           }
-  
+
           .type_btn {
             width: 2.4375vw;
             height: 2.4375vw;
-  
+
             &::after {
               width: 2.4375vw;
               height: .1875vw;
               bottom: 1.125vw;
             }
-  
+
             &::before {
               width: .1875vw;
               height: 2.4375vw;
@@ -1517,19 +1296,20 @@
             }
           }
         }
-  
+
         .item_content {
-  
+
           p {
             font-size: 1vw;
           }
         }
-  
+
         &.active {
           .item_header {
             height: 6.25vw;
           }
-          .item_content{
+
+          .item_content {
             padding-bottom: 3.125vw;
           }
         }
@@ -1587,4 +1367,3 @@
     }
   }
 }
-
