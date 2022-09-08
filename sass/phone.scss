@@ -34,6 +34,13 @@
   src: url('../fonts/SourceHanSansCN-Light.otf') format('truetype');
 }
 
+@font-face {
+  font-family: "SourceHanSansCN";
+  font-weight: 900;
+  /* Project id 2621899 */
+  src: url('../fonts/SourceHanSansCN-Heavy.otf') format('truetype');
+}
+
 input,
 button,
 textarea {
@@ -2324,6 +2331,40 @@ body {
           justify-content: center;
         }
       }
+    }
+  }
+}
+
+.silde_letter{
+  text-align: center;
+  height: 18rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .silde_title{
+    font-family: "SourceHanSansCN";
+    font-size: 1.4rem;
+    color: #666666;
+    font-weight: 900;
+    margin-bottom: .75rem;
+    display: flex;
+    justify-content: center;
+  }
+  .silde_info{
+    font-family: "SourceHanSansCN";
+    font-size: 1rem;
+    color: #666666;
+    font-weight: normal;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  .silde_scroll{
+    cursor: pointer;
+    display: inline-block;
+    img{
+      width: 1.5rem;
     }
   }
 }

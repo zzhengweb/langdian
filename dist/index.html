@@ -111,8 +111,45 @@
       </div>
     </div>
   </div>
+  <div class="silde_letter">
+    <div class="silde_title">
+      <span class="wow bounceInDown" data-wow-delay=".05s">朗</span>
+      <span class="wow bounceInDown" data-wow-delay=".1s">电</span>
+      <span class="wow bounceInDown" data-wow-delay=".15s">一</span>
+      <span class="wow bounceInDown" data-wow-delay=".2s">家</span>
+      <span class="wow bounceInDown" data-wow-delay=".25s">智</span>
+      <span class="wow bounceInDown" data-wow-delay=".3s">能</span>
+      <span class="wow bounceInDown" data-wow-delay=".35s">制</span>
+      <span class="wow bounceInDown" data-wow-delay=".4s">造</span>
+      <span class="wow bounceInDown" data-wow-delay=".45s">整</span>
+      <span class="wow bounceInDown" data-wow-delay=".5s">体</span>
+      <span class="wow bounceInDown" data-wow-delay=".55s">方</span>
+      <span class="wow bounceInDown" data-wow-delay=".6s">案</span>
+      <span class="wow bounceInDown" data-wow-delay=".65s">商</span>
+    </div>
+    <div class="silde_info">
+      <span class="wow bounceInDown" data-wow-delay=".85s">聚</span>
+      <span class="wow bounceInDown" data-wow-delay=".8s">焦</span>
+      <span class="wow bounceInDown" data-wow-delay=".75s">于</span>
+      <span class="wow bounceInDown" data-wow-delay=".7s">M</span>
+      <span class="wow bounceInDown" data-wow-delay=".65s">E</span>
+      <span class="wow bounceInDown" data-wow-delay=".6s">S</span>
+      <span class="wow bounceInDown" data-wow-delay=".55s">及</span>
+      <span class="wow bounceInDown" data-wow-delay=".5s">装</span>
+      <span class="wow bounceInDown" data-wow-delay=".45s">备</span>
+      <span class="wow bounceInDown" data-wow-delay=".4s">的</span>
+      <span class="wow bounceInDown" data-wow-delay=".35s">研</span>
+      <span class="wow bounceInDown" data-wow-delay=".3s">发</span>
+      <span class="wow bounceInDown" data-wow-delay=".25s">生</span>
+      <span class="wow bounceInDown" data-wow-delay=".2s">产</span>
+      <span class="wow bounceInDown" data-wow-delay=".15s">和</span>
+      <span class="wow bounceInDown" data-wow-delay=".1s">销</span>
+      <span class="wow bounceInDown" data-wow-delay=".05s">售</span>
+    </div>
+    <div class="silde_scroll wow fadeInDown" data-wow-delay=".5s"><img src="./images/icon/4.png" data-scroll="place_1" /></div>
+  </div>
   <!-- 整体智能方案 -->
-  <div class="i_solution">
+  <div class="i_solution" id="place_1">
     <div class="field_swiper">
       <div class="container_zz2">
         <div class="i_common_title wow tada">
@@ -628,6 +665,12 @@
         },
       },
     });
+
+    $(".silde_scroll").click(function (e) {
+      if (e.target.dataset.scroll) {
+        $('html,body').animate({ scrollTop: $('#' + e.target.dataset.scroll).offset().top }, 1000)
+      }
+    })
   </script>
 </body>
 

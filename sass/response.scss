@@ -1316,6 +1316,22 @@
       }
     }
   }
+  .silde_letter{
+    height: 68.83vw;
+    .silde_title{
+      font-size: 4.91vw;
+      margin-bottom: 1.84vw;
+    }
+    .silde_info{
+      font-size: 3.37vw;
+      margin-bottom: 5.52vw;
+    }
+    .silde_scroll{
+      img{
+        width: 2.39vw;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1280px) {
