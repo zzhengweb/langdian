@@ -2,6 +2,9 @@
 /* CSS Document */
 
 @media screen and (max-width: 1920px) {
+  .container_zz2{
+    padding:0 .52vw;
+  }
   .inner_banner {
 
     img {
@@ -904,6 +907,93 @@
       .intro_flex {
         .intro_right {
           width: 41.875vw;
+        }
+      }
+    }
+
+    &.robot_intro_new{
+      padding-bottom: .625vw;
+    }
+    .intro_robot_new {
+      .robot_title {
+        margin-bottom: .25vw;
+      }
+  
+      .robot_title_en {
+        margin-bottom: 1.875vw;
+        font-size: 1.25vw;
+      }
+  
+      .intro_content_new {
+        margin-bottom: 2.8125vw;
+  
+        p {
+          font-size: 1.25vw;
+        }
+      }
+  
+      .robot_titel_h4 {
+        font-size: 1.1875vw;
+        margin-bottom: 1.0625vw;
+      }
+  
+      .honor_text_list {
+        margin-bottom: 2.5vw;
+  
+        .honor_text_item {
+          .honor_text {
+            font-size: .9375vw;
+          }
+        }
+      }
+  
+      .honor_flex {
+        .img_1,.img_2,.img_3,.img_4{
+          margin-right: .7vw;
+          margin-bottom: 2.375vw;
+        }
+  
+        .img_1 {
+          img {
+            width: 18.5625vw;
+            height: 12.8125vw;
+          }
+        }
+        .img_2 {
+          margin-right: 0;
+          img {
+            width: 10.375vw;
+            height: 12.8125vw;
+          }
+        }
+        .img_3 {
+          margin-right: 0;
+          img {
+            width: 30.25vw;
+            height: 12.8125vw;
+          }
+        }
+        .img_4 {
+          img {
+            width: 11vw;
+            height: 12.8125vw;
+          }
+        }
+        .honor_left {
+          width: 70.2vw;
+        }
+  
+        .honor_right {
+          width: .625vw;
+          padding-left: 1vw;
+          >div{
+            &:nth-child(2n){
+              margin-right: 0;
+            }
+          }
+          &::after{
+            height: 27.75vw;
+          }
         }
       }
     }

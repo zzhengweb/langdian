@@ -1843,6 +1843,117 @@ body {
       }
     }
   }
+
+  &.robot_intro_new{
+    height: auto;
+    padding-bottom: 80px;
+  }
+  .intro_robot_new {
+    .robot_title {
+      margin-bottom: 4px;
+    }
+
+    .robot_title_en {
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
+
+    .intro_content_new {
+      margin-bottom: 45px;
+
+      p {
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 1.9em;
+      }
+    }
+
+    .robot_titel_h4 {
+      font-size: 19px;
+      color: #b81f23;
+      font-weight: bold;
+      margin-bottom: 17px;
+    }
+
+    .honor_text_list {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+
+      .honor_text_item {
+        .honor_text {
+          font-size: 15px;
+          line-height: calc(32em / 15);
+          color: #333333;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .honor_flex {
+      display: flex;
+      align-items: flex-start;
+      .img_1,.img_2,.img_3,.img_4{
+        border: 1px solid #bfbfbf;
+        margin-right: 20px;
+        margin-bottom: 30px;
+      }
+
+      .img_1 {
+        img {
+          width: 297px;
+          height: 205px;
+        }
+      }
+      .img_2 {
+        margin-right: 0;
+        img {
+          width: 166px;
+          height: 205px;
+        }
+      }
+      .img_3 {
+        margin-right: 0;
+        img {
+          width: 484px;
+          height: 205px;
+        }
+      }
+      .img_4 {
+        img {
+          width: 200px;
+          height: 205px;
+        }
+      }
+      .honor_left {
+        width: 1145px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .honor_right {
+        width: 10px;
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 20px;
+        position: relative;
+        >div{
+          &:nth-child(2n){
+            margin-right: 0;
+          }
+        }
+        &::after{
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          border-left: 1px solid #bfbfbf;
+          height: 444px;
+        }
+      }
+    }
+  }
 }
 
 .robot_pro {

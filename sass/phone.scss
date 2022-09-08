@@ -1194,6 +1194,84 @@ body {
       }
     }
   }
+
+  &.robot_intro_new{
+    height: auto;
+    padding-bottom: 2rem;
+  }
+  .intro_robot_new {
+    .robot_title {
+      margin-bottom: .1rem;
+    }
+
+    .robot_title_en {
+      margin-bottom: .75rem;
+    }
+
+    .intro_content_new {
+      margin-bottom: 1.125rem;
+
+      p {
+        font-size: .6rem;
+        font-weight: normal;
+        line-height: 1.9em;
+      }
+    }
+
+    .robot_titel_h4 {
+      font-size: .6rem;
+      color: #b81f23;
+      font-weight: bold;
+      margin-bottom: .425rem;
+    }
+
+    .honor_text_list {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+
+      .honor_text_item {
+        .honor_text {
+          font-size: .45rem;
+          line-height: calc(32em / 15);
+          color: #333333;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .honor_flex {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      .img_1,.img_2,.img_3,.img_4{
+        border: 1px solid #bfbfbf;
+        margin-right: .5rem;
+        margin-bottom: .95rem;
+        img {
+          height: 5rem;
+        }
+      }
+      .img_2 {
+        margin-right: 0;
+      }
+      .img_3 {
+        margin-right: 0;
+      }
+      .honor_left {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .honor_right {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+      }
+    }
+  }
 }
 
 .robot_pro {
